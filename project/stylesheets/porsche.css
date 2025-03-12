@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: BebasNeue;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+#startVideo {
+    width: 100vw;
+}
+
+#headline {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 30%;
+    left: 29.27%;
+    color: rgba(255, 255, 255, 0.77);
+    font-size: 10em;
+}   
+
+#AboutPorsche {
+    height: 90vh;
+    margin-top: -0.4%;
+    background-image: url(../images/PorscheGT3RS/natureBackground.jpg);
+}
+
+#boxAboutUs {
+    display: flex;
+    position: absolute;
+    margin-top: 13%;
+    left: 17.5%;
+    padding: 3em;
+    padding-bottom: 12em;
+    width: 60%;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.77);
+}
+
+#boxAboutUs > p {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2%;
+    font-size: 2em;
+}
+
+#aboutUsPorsche {
+    position: absolute;
+    margin-top: 23%;
+    left: 20%;
+}
+
+
+
+#nextSlide {
+    width: 30%;
+}
