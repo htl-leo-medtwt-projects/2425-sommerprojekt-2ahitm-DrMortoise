@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: BebasNeue;
+    background-color: black;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+#headline {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 75vh;
+    left: 35.8vw;
+    z-index: 5;
+    color: rgba(255, 255, 255, 0.77);
+    font-size: 12vw;
+} 
+
+#backgroundImagesHeader {
+    width: 100vw;
+}
+
+#backgroundImagesHeader > img {
+    width: 31vw;
+    margin: 1vw;
+}
+
+#middleAudi {
+    height: 100vh;
+}
+
+#sideText {
+    position: absolute;
+    top: 2vh;
+    left: 67vw;
+    width: 30vw;
+    text-align: center;
+    font-size: 1.8vw;
+    color: white;
+}
+
+#logoName {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 10vh;
+    left: 7vw;
+    color: rgba(255, 255, 255, 0.77);
+    font-size: 5vw;
+}
+
+#logoName > p1 {
+    color: #FF6F00;
+}
+
+#logoName > p2 {
+    color: #FF00E1;
+}
+
+#logoName > p3 {
+    color: #FFDD00;
+}
+
+#headlineImage {
+    position: absolute;
+    margin-top: 8vh;
+    left: 25vw;
+}
+
+#boxAboutUs {
+    position: absolute;
+    text-align: center;
+    margin-top: 33vh;
+    left: 14.6vw;
+    padding: 3em;
+    width: 60vw;
+    font-size: 1.8vw;
+    border-radius: 1vw;
+    background-color: rgba(255, 255, 255, 0.77);
+}
+
+#AboutUsBackground {
+    width: 100vw;
+}
+
+#brandPricesImage > img {
+    width: 100vw;
+}
+
+
+
+
+
+
+
+/*Footer*/
+#footer {
+    background-color: #000000;
+    height: 27vh;
+}
+
+#sources {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width:15vw;
+    height: 17vh;
+    background-color: #D9D9D9   ;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+#sources > p {
+    font-size: 1.4vw;
+}
+
+#phoneNumber {
+    position: absolute;
+    font-size: 2.1vw;
+    color: white;
+    left: 42vw;
+    margin-top: 3vh;
+}
+
+#socials {
+    position: absolute;
+    margin-left: 39vw;
+    margin-top: 8vw;
+    width: 22vw;
+    background-color: #D9D9D9;
+    border-radius: 1vw;
+}
+
+#socials > a > img {
+    width: 4vw;
+    margin: 1vw 0.7vw;
+    border-radius: 5vw;
+}
+
+#logo {
+    width: 25vw;
+    position: absolute;
+    margin-left: 70vw;
+    border-radius: 1vw;
+    border: 2vw solid rgba(0, 0, 0, 0.775);
+}
