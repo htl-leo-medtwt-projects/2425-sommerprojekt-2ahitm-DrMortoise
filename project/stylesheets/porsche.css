@@ -4,10 +4,6 @@ body {
     font-family: BebasNeue;
 }
 
-p {
-    margin: 5px;
-}
-
 @font-face {
     font-family: BebasNeue;
     src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
@@ -22,10 +18,10 @@ p {
     position: absolute;
     justify-content: center;
     text-align: center;
-    top: 30%;
-    left: 29.27%;
+    top: 15vh;
+    left: 30.3vw;
     color: rgba(255, 255, 255, 0.77);
-    font-size: 10em;
+    font-size: 8vw;
 }  
 
 #underlineText {
@@ -33,10 +29,10 @@ p {
     position: absolute;
     justify-content: center;
     text-align: center;
-    top: 75%;
-    left: 24.84%;
+    top: 75vh;
+    left: 19.8vw;
     color: rgba(255, 255, 255, 0.77);
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 #logoName {
@@ -44,10 +40,10 @@ p {
     position: absolute;
     justify-content: center;
     text-align: center;
-    top: 80%;
-    left: 42.09%;
+    top: 80vh;
+    left: 41vw;
     color: rgba(255, 255, 255, 0.77);
-    font-size: 5em;
+    font-size: 5vw;
 }
 
 #logoName > p1 {
@@ -63,85 +59,103 @@ p {
 }
 
 #AboutPorsche {
-    height: 90vh;
-    margin-top: -0.4%;
-    background-image: url(../images/PorscheGT3RS/natureBackground.jpg);
+    height: 100vh;
+    margin-top: -0.4vh;
+    background-image: url();
 }
 
 #boxAboutUs {
     display: flex;
     position: absolute;
-    margin-top: 13%;
-    left: 17.5%;
+    margin-top: 13vh;
+    left: 17.5vw;
     padding: 3em;
-    padding-bottom: 12em;
-    width: 60%;
-    border-radius: 1em;
+    padding-bottom: 18vh;
+    width: 60vw;
+    border-radius: 1vw;
     background-color: rgba(255, 255, 255, 0.77);
 }
 
 #boxAboutUs > p {
     width: 100%;
     text-align: center;
-    letter-spacing: 2%;
-    font-size: 2em;
+    letter-spacing: 0.2vw;
+    font-size: 1.5vw;
+}
+
+#aboutUsPorscheImage {
+    position: absolute;
+    left: 15vw;
+    margin-top: 28vh;
+    width: 35vw;    
 }
 
 #aboutUsPorsche {
     position: absolute;
-    margin-top: 20%;
-    left: 15%;
+    z-index: -1;
+    width: 100vw;
 }
 
 #slideShowHeadline > img {
     width: 100%;
 }
 
+#mainSlide {
+    width: 100vw;
+}
+
 #nextSlide {
     display: flex;
     position: absolute;
-    margin-top: -22%;
-    margin-left: 60%;
-    border-radius: 6em;
-    border: 15px solid black;
+    margin-top: -38vh;
+    margin-left: 60vw;
+    border-radius: 2vw;
+    border: 0.5vw solid black;
     z-index: 3;
-    width: 20%;
+    width: 20vw;
 }
 
 #nextNextSlide {
     display: flex;
     position: absolute;
-    margin-top: -30%;
-    margin-left: 75%;
-    border-radius: 6em;
-    border: 15px solid black;
+    margin-top: -52vh;
+    margin-left: 75vw;
+    border-radius: 2vw;
+    border: 0.5vw solid black;
     z-index: 2;
-    width: 20%;
+    width: 20vw;
 }
 
 #slideShowPoints {
     display: flex;
     position: absolute;
-    margin-top: -5%;
-    margin-left: 50%;
+    margin-top: -10vh;
+    margin-left: 50vw;
 }
 
 #slideShowPoints > div > p {
-    margin: 18px;
-    font-size: 2.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    position: relative;
     background-color: rgba(185, 185, 185, 0.845);
-    border-radius: 5em;
-    width: 90%;
-    text-align: center;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+}
+
+#slideShowPoints > div {
+    margin: 0.2vw;
 }
 
 #shopImage {
-    width: 100%;
+    width: 100vw;
 }
 
 #shoppingCart > p {
     text-align: center;
-    font-size: 5em;
+    font-size: 2vw;
 }
 
 #footerShop {
@@ -152,8 +166,8 @@ p {
 #logoNameShop {
     display: flex;
     position: absolute;
-    margin-left: 2%;
-    font-size: 5em;
+    margin-left: 2vw;
+    font-size: 5vw;
 }
 
 #logoNameShop > p1 {
@@ -168,14 +182,21 @@ p {
     color: #FFDD00;
 }
 
+#shopButtons {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
 #shopButtons > button {
     font-family: BebasNeue;
-    font-size: 3em;
-    width: 15%;
+    font-size: 2vw;
+    width: 15vw;
     height: 2em;
-    border-radius: 0.5em;
+    margin-top: 1.6vh;
+    border-radius: 0.8vw;
     background-color: #4F9EF8;
-    border: solid 3px white;
+    border: solid 0.1vw white;
 }
 
 button:hover {
@@ -193,13 +214,14 @@ button:hover {
     position: absolute;
     justify-content: center;
     align-items: center;
-    margin-top: -93px;
-    margin-left: 88%;
+    font-size: 1.3vw;
+    margin-top: 2vh;
+    margin-left: 88vw;
     background-color: rgba(255, 255, 255, 0.788);
-    width: 10%;
-    border-radius: 1em;
-    height: 5em;
-    padding: 5px;
+    width: 10vw;
+    border-radius: 0.5vw;
+    height: 4.3vw;
+    padding-left: 1vw;
 }
 
 #login:hover {
