@@ -153,3 +153,71 @@ body {
     border-radius: 1vw;
     border: 2vw solid rgba(0, 0, 0, 0.775);
 }
+
+/*cards*/
+
+/*#cards {              Code for java script, maybe good for later
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+} */
+
+#cards {
+    width: 20vw;
+    height: 90vh;
+}
+
+#cards > div {
+    position: absolute;
+    width: 25vw;
+    height: 80vh;
+    left: 60vw;
+    margin: 5vh;
+    margin-left: 6vw;
+    background-color: #c500e8d7;
+    transition: 0.5s background-color;
+}
+
+#cards > div:hover {
+    cursor: pointer;
+    background-color: #7c0092d7;
+}
+
+#cards > p {
+    color: white;
+    font-size: 3vw;
+    margin-top: -2vw;
+    margin-bottom: -1vw;
+    text-align: end;
+    width: 85vw;
+}
+
+/*Produktionsstätte*/
+
+#headlineImageProduce > img {
+    width: 100vw;
+}
+
+#facts {
+    margin-left: 12vw;
+}
+
+#facts > p {
+    font-size: 2vw;
+    color: white;
+    margin-bottom: 8vh;
+    width: 40vw;
+}
+
+#produceImage {
+    position: absolute;
+    margin-top: -84vh;
+    margin-left: 55vw;
+    width: 40vw;
+    border-radius: 3vw;
+}
+
+#performanceRaceHeadline > img {
+    width: 100vw;
+}
