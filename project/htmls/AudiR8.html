@@ -24,7 +24,7 @@
     <div>
         <div id="aboutUs">
             <div id="headlineImage">
-                <img src="../images/Audir8/AboutUs.png" alt="About us">
+                <img id="aboutUsImage" src="../images/Audir8/aboutUsHeadline.png" alt="About us">
             </div>
             <div id="boxAboutUs"><p>Audi R8 – Die Ikone der Performance</p>
                 <p>Der Audi R8 steht für kompromisslose Kraft, präzise Ingenieurskunst und pure Emotion. Ein Supersportwagen, der die Straße beherrscht.</p>
@@ -32,7 +32,7 @@
                 <p>Sein markantes Design verbindet aggressive Dynamik mit zeitloser Eleganz. Im Innenraum treffen Luxus und Motorsport-Technologie aufeinander – ein Cockpit, das auf den Fahrer zugeschnitten ist.</p>
                 
                 <p>Der Audi R8 ist mehr als ein Auto. Er ist ein Erlebnis. Bereit, es zu spüren?</p></div>
-            <img id="AboutUsBackground" src="../images/Audir8/AboutUs_background.jpg" alt="Anime Hintergrund">
+            <img id="AboutUsBackground" src="../images/Audir8/AboutUs_background.jpg" alt="City Background">
         </div>
     </div>
     <div>
@@ -67,6 +67,50 @@
         <div id="performanceRaceHeadline">
             <img src="../images/Audir8/PerformanceRechnerHeadline.png" alt="Performance Calculator">
         </div>
+        <div id="AccelerationValue">
+            <div id="inlineCircle">
+                <!--Java script value-->
+                <p id="kilometersPerHour">3.6 <p id="kmH">km/h</p></p>
+                <!--converter to m/s-->
+                <p id="metersPerSecond">10 <p id="mS">m/s</p></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="calculator">
+            <h2>Audi R8 Performance-Rechner</h2>
+        
+        <label id="headlines" class="headlineOne">Modell wählen:</label>
+        <select id="model">
+            <option value="3.1">R8 V10 Plus</option>
+            <option value="3.4">R8 V10</option>
+            <option value="2.8">R8 V10 Performance</option>
+        </select>
+        
+        <label id="headlines" class="headlineTwo">Zusätzliche Beladung (kg): <span id="weightValue">0</span> kg</label>
+        <input id="weight" type="number" id="weight" min="0" max="200" value="0" step="10">
+        
+        <label id="headlines" class="headlineThree">Wetterbedingungen:</label>
+        <select id="weather">
+            <option value="1">Trocken</option>
+            <option value="1.2">Nass</option>
+            <option value="1.5">Sandiger Boden</option>
+            <option value="1.8">Vereister Boden</option>
+        </select>
+        
+        <label id="headlines" class="headlineFour">Reifentyp:</label>
+        <select id="tires">
+            <option value="1">Straßenreifen</option>
+            <option value="0.9">Semi-Slicks</option>
+            <option value="0.8">Rennslicks</option>
+        </select>
+        
+        <button id="calculate">Berechnen</button>
+        <p class="result">
+        </div>
+    </div>
+    <div>
+        <div id="Evaluation"></div>
     </div>
 
 

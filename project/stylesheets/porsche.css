@@ -197,10 +197,12 @@ body {
     border-radius: 0.8vw;
     background-color: #4F9EF8;
     border: solid 0.1vw white;
+    transition: transform 0.5s;
 }
 
 button:hover {
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 #buy {
@@ -215,17 +217,19 @@ button:hover {
     justify-content: center;
     align-items: center;
     font-size: 1.3vw;
-    margin-top: 2vh;
+    margin-top: 1.7vh;
     margin-left: 88vw;
     background-color: rgba(255, 255, 255, 0.788);
     width: 10vw;
     border-radius: 0.5vw;
     height: 4.3vw;
     padding-left: 1vw;
+    transition: transform 0.5s;
 }
 
 #login:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 #login > p {

@@ -74,6 +74,11 @@ body {
     left: 25vw;
 }
 
+#aboutUsImage {
+    margin-left: -25vw;
+    width: 100vw;
+}
+
 #boxAboutUs {
     position: absolute;
     text-align: center;
@@ -93,6 +98,268 @@ body {
 #brandPricesImage > img {
     width: 100vw;
 }
+
+/*cards*/
+
+/*#cards {              Code for java script, maybe good for later
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+} */
+
+#cards {
+    width: 20vw;
+    height: 80vh;
+}
+
+#cards > div {
+    position: absolute;
+    width: 25vw;
+    height: 70vh;
+    left: 60vw;
+    margin: 5vh;
+    margin-left: 6vw;
+    background-color: #c500e8d7;
+    transition: 0.5s background-color;
+}
+
+#cards > div:hover {
+    cursor: pointer;
+    background-color: #7c0092d7;
+}
+
+#cards > p {
+    color: white;
+    font-size: 3vw;
+    margin-top: -2vw;
+    margin-bottom: -1vw;
+    text-align: end;
+    width: 85vw;
+}
+
+/*Produktionsstätte*/
+
+#headlineImageProduce > img {
+    width: 100vw;
+}
+
+#facts {
+    margin-left: 12vw;
+}
+
+#facts > p {
+    font-size: 2vw;
+    color: white;
+    margin-bottom: 8vh;
+    width: 40vw;
+}
+
+#produceImage {
+    position: absolute;
+    margin-top: -84vh;
+    margin-left: 55vw;
+    width: 40vw;
+    border-radius: 3vw;
+}
+
+#performanceRaceHeadline > img {
+    width: 100vw;
+}
+
+/*Performance Racer*/
+
+#AccelerationValue {
+    width: 30vw;
+    height: 30vw;
+    background: linear-gradient(to bottom, #9966ff 0%, #cc66ff 100%);
+    border-radius: 20vw;
+    margin-left: 12vw;
+}
+
+#inlineCircle {
+    width: 30vw;
+    height: 30vw;
+    background: black;
+    border-radius: 20vw;
+    margin-left: 8vw;
+}
+
+#inlineCircle > p {
+    position: absolute;
+    font-size: 3vw;
+    color: white;
+}
+
+#kilometersPerHour {
+    margin-left: 5.1vw;
+    margin-top: 11vw;
+    left: auto;
+}
+
+#inlineCircle > p {
+    position: absolute;
+    font-size: 3vw;
+    color: white;
+}
+
+#kilometersPerHour {
+    margin-left: 5.1vw;
+    margin-top: 11vw;
+    left: auto;
+}
+
+#kmH {
+    margin-left: 10.2vw;
+    margin-top: 11vw;
+    left: auto;
+}
+
+#metersPerSecond {
+    margin-left: 5.1vw;
+    margin-top: 16vw;
+    left: auto;
+}
+
+#mS {
+    margin-left: 10.2vw;
+    margin-top: 16vw;
+    left: auto;
+}
+
+/*Calculator for the performance*/
+
+#calculator {
+    position: absolute;
+    background: linear-gradient(to bottom, #9966ff 0%, #cc66ff 100%);
+    width: 35vw;
+    height: 60vh;
+    margin-left: 55vw;
+    margin-top: -55vh;
+    border-radius: 3vw;
+}
+
+#calculator > h2 {
+    font-size: 2.8vw;
+    margin-left: 2.6vw;
+    color: white;
+}
+
+#headlines {
+    display: block;
+    font-size: 2vw;
+    color: white;
+    margin-top: 1vh;
+}
+
+.headlineOne {
+    margin-left: 11.1vw;
+}
+
+.headlineTwo {
+    margin-left: 7vw;
+}
+
+.headlineThree {
+    margin-left: 9vw;
+}
+
+.headlineFour {
+    margin-left: 12.6vw;
+}
+
+
+#model {
+    display: block;
+    font-size: 1vw;
+    margin-left: 11.3vw;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+#weight {
+    display: block;
+    font-size: 1vw;
+    margin-left: 14.2vw;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+#weather {
+    display: block;
+    font-size: 1vw;
+    margin-left: 12.2vw;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+#tires {
+    display: block;
+    font-size: 1vw;
+    margin-left: 12.6vw;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+#model > option {
+    font-size: 0.4vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#weather > option {
+    font-size: 0.4vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#tires > option {
+    font-size: 0.4vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#calculate {
+    display: block;
+    font-size: 1.4vw;
+    margin-left: 11.54vw;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 1vw;
+    margin-top: 2vh;
+    border-radius: 1vw;
+    transition: transform 0.5s;
+}
+
+#calculate:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+#Evaluation {
+    height: 100vh;
+}
+
+
+
+
 
 
 
@@ -152,72 +419,4 @@ body {
     margin-left: 70vw;
     border-radius: 1vw;
     border: 2vw solid rgba(0, 0, 0, 0.775);
-}
-
-/*cards*/
-
-/*#cards {              Code for java script, maybe good for later
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-} */
-
-#cards {
-    width: 20vw;
-    height: 90vh;
-}
-
-#cards > div {
-    position: absolute;
-    width: 25vw;
-    height: 80vh;
-    left: 60vw;
-    margin: 5vh;
-    margin-left: 6vw;
-    background-color: #c500e8d7;
-    transition: 0.5s background-color;
-}
-
-#cards > div:hover {
-    cursor: pointer;
-    background-color: #7c0092d7;
-}
-
-#cards > p {
-    color: white;
-    font-size: 3vw;
-    margin-top: -2vw;
-    margin-bottom: -1vw;
-    text-align: end;
-    width: 85vw;
-}
-
-/*Produktionsstätte*/
-
-#headlineImageProduce > img {
-    width: 100vw;
-}
-
-#facts {
-    margin-left: 12vw;
-}
-
-#facts > p {
-    font-size: 2vw;
-    color: white;
-    margin-bottom: 8vh;
-    width: 40vw;
-}
-
-#produceImage {
-    position: absolute;
-    margin-top: -84vh;
-    margin-left: 55vw;
-    width: 40vw;
-    border-radius: 3vw;
-}
-
-#performanceRaceHeadline > img {
-    width: 100vw;
 }
