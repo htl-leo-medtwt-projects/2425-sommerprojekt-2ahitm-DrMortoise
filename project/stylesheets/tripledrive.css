@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: BebasNeue;
+    background-color: black;
+    letter-spacing: 0.3vw;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+#backgroundImageHeader {
+    width: 100vw;
+}
+
+#logoName {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 2vh;
+    left: 1vw;
+    color: rgb(238, 242, 1);
+    font-size: 25vw;
+    text-shadow: 0px 0px 5px white, 
+                0px 0px 10px white, 
+                0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+#logoName > p1 {
+    color: #FF6F00;
+}
+
+#logoName > p2 {
+    color: #FF00E1;
+}
+
+#logoName > p3 {
+    color: #FFDD00;
+}
+
+#underlineText {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 75vh;
+    color: rgba(255, 255, 255, 0.77);
+    font-size: 2vw;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+/*aboutMe*/
+
+#aboutMe {
+    width: 42vw;
+    color: white;
+    font-size: 2vw;
+    margin: 8vw;
+}
+
+#logoImage {
+    position: absolute;
+    margin-left: 58vw;
+    margin-top: -36vw;
+    width: 32vw;
+}
+
+/*list*/
+
+#explination, #list > p {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 12vh;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+#list {
+    height: 80vh;
+}
+
+#box1 > div, #box2 > div, #box3 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 5vw;
+    margin: 8vw;
+    margin-left: 38vw;
+    font-size: 2vw;
+}
+
+#box1 > div {
+    background-color: #FF6F00;
+}
+
+#box2 > div {
+    background-color: #FF00E1;
+}
+
+#box3 > div {
+    background-color: #FFDD00   ;
+}
+
+#list > div > p {
+    position: absolute;
+    width: 20vw;
+    font-size: 3vw;
+    color: white;
+    margin-left: 44vw;
+    margin-top: -11vw;
+}
+
+#list > div > div > a {
+    text-decoration: none;
+    color: black;
+    padding: 1vw;
+}
+
+/*project*/
+
+h1 {
+    font-size: 5vw;
+    color: white;
+    margin-top: 18vh;
+    width: 100vw;
+    text-align: center;
+}
+
+#project > p {
+    color: white;
+    font-size: 2vw;
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+}
+
+/*Footer*/
+#footer {
+    background-color: #565656;
+    height: 27vh;
+}
+
+#sources {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width:15vw;
+    height: 17vh;
+    background-color: #D9D9D9   ;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+#sources > p {
+    font-size: 1.4vw;
+    letter-spacing: 0.1vw;
+}
+
+#phoneNumber {
+    position: absolute;
+    font-size: 2.1vw;
+    left: 39.5vw;
+    margin-top: 3vh;
+}
+
+#socials {
+    position: absolute;
+    margin-left: 39vw;
+    margin-top: 8vw;
+    width: 23vw;
+    background-color: #D9D9D9;
+    border-radius: 1vw;
+}
+
+#socials > a > img {
+    width: 4vw;
+    margin: 1vw 0.7vw;
+    border-radius: 5vw;
+}
+
+#logo {
+    width: 17vw;
+    position: absolute;
+    margin-left: 75vw;
+    margin-top: -1vw;
+}

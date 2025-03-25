@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: BebasNeue;
+    letter-spacing: 0.3vw;
 }
 
 @font-face {
@@ -30,9 +31,9 @@ body {
     justify-content: center;
     text-align: center;
     top: 75vh;
-    left: 19.8vw;
     color: rgba(255, 255, 255, 0.77);
     font-size: 2vw;
+    width: 100vw;
 }
 
 #logoName {
@@ -314,12 +315,13 @@ button:hover {
 
 #sources > p {
     font-size: 1.4vw;
+    letter-spacing: 0.1vw;
 }
 
 #phoneNumber {
     position: absolute;
     font-size: 2.1vw;
-    left: 42vw;
+    left: 39.5vw;
     margin-top: 3vh;
 }
 
@@ -327,7 +329,7 @@ button:hover {
     position: absolute;
     margin-left: 39vw;
     margin-top: 8vw;
-    width: 22vw;
+    width: 23vw;
     background-color: #D9D9D9;
     border-radius: 1vw;
 }
