@@ -182,7 +182,7 @@ body {
 
 /*Footer*/
 #footer {
-    background-color: #565656;
+    background-color: #000000;
     height: 27vh;
 }
 
@@ -229,7 +229,8 @@ body {
     width: 20vw;
     position: absolute;
     margin-left: 75vw;
-    margin-top: 2vw;
+    margin-top: 3vw;
+    border-radius: 1vw;
 }
 
 #guessingGameHeadline {
