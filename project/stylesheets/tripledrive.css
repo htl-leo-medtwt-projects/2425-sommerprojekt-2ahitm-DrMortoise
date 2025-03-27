@@ -15,29 +15,27 @@ body {
     width: 100vw;
 }
 
-#logoName {
-    display: flex;
+#logoName > #blurBox {
     position: absolute;
-    justify-content: center;
-    text-align: center;
-    top: 2vh;
-    left: 1vw;
+    background-color: rgba(255, 255, 255, 0.199);
+    padding: 1vw;
+    border-radius: 5vw;
+    backdrop-filter: blur(20px);
+    margin-left: 9.3vw;
+    margin-top: -85vh;
     color: rgb(238, 242, 1);
-    font-size: 25vw;
-    text-shadow: 0px 0px 5px white, 
-                0px 0px 10px white, 
-                0px 0px 15px rgba(255, 255, 255, 0.8);
+    font-size: 20vw;
 }
 
-#logoName > p1 {
+#blurBox > p1 {
     color: #FF6F00;
 }
 
-#logoName > p2 {
+#blurBox > p2 {
     color: #FF00E1;
 }
 
-#logoName > p3 {
+#blurBox > p3 {
     color: #FFDD00;
 }
 
@@ -46,11 +44,13 @@ body {
     position: absolute;
     justify-content: center;
     text-align: center;
-    top: 75vh;
     color: rgba(255, 255, 255, 0.77);
     font-size: 2vw;
     width: 80vw;
-    margin-left: 10vw;
+    margin-top: 12vh;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.137), 
+                0px 0px 10px rgba(255, 255, 255, 0.468), 
+                0px 0px 15px rgba(255, 255, 255, 0.429);
 }
 
 /*aboutMe*/
