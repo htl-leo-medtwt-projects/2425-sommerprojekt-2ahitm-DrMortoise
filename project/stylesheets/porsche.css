@@ -103,6 +103,7 @@ body {
 
 #mainSlide {
     width: 100vw;
+    height: 100vh;
 }
 
 #nextSlide {
@@ -127,36 +128,45 @@ body {
     width: 20vw;
 }
 
-#slideShowPoints {
-    display: flex;
-    position: absolute;
-    margin-top: -10vh;
-    margin-left: 50vw;
-}
-
-#slideShowPoints > div > p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1vw;
-    position: relative;
-    background-color: rgba(185, 185, 185, 0.845);
-    border-radius: 50%;
-    width: 2vw;
-    height: 2vw;
-}
-
-#slideShowPoints > div {
-    margin: 0.2vw;
-}
-
 #shopImage {
     width: 100vw;
 }
 
-#shoppingCart > p {
+#outputVote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    font-size: 1vw;
+}
+
+#outputVote > div {
+    padding: 2vw;
+    background-color: #5656566e;
     text-align: center;
-    font-size: 2vw;
+    border-radius: 1vw;
+    margin: 1vw;
+    height: 60vh;
+    width: 20vw;
+}
+
+#outputVote > div > button {
+    background-color: #ef0a0a;
+    width: 10vw;
+    border: none;
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    transition: 0.5s transform;
+}
+
+#outputVote > div > button:hover {
+    transform: translate(scale(2));
+}
+
+#voteImages {
+    width: 15vw;
+    border-radius: 2vw;
 }
 
 #footerShop {
