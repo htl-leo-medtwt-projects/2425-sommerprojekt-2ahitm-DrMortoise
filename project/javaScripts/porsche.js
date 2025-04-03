@@ -83,17 +83,58 @@ const randomItems = getRandomItems(items, 4);
 
 let voteCount = 0;
 
-randomItems.forEach(item => {
+randomItems.forEach((item, index) => {
     const productDiv = document.createElement('div');
     productDiv.innerHTML = `
         <img id="voteImages" src="${item.img}" alt="${item.productName}">
         <h2>${item.productName}</h2>
         <p>${item.about}</p>
-        <button onclick="voteScala()">Your vote</button>
+
+        <button class="voteButton voteButton${index}" onclick="voteScala(${index})">Your vote</button>
     `;
     outputVote.appendChild(productDiv);
 });
 
-function voteScala() {
-    voteCount++;
+function voteScala(index) {
+    const voteButton = document.querySelector(`.voteButton${index}`);
+
+    if (document.getElementById("username").value == "" || document.getElementById("password").value == "") {
+        console.log("please login");
+
+        voteButton.style.transform = "translateX(-2vw)";
+        setTimeout(() => {
+            voteButton.style.transform = "translateX(2vw)";
+        }, 500);
+        setTimeout(() => {
+            voteButton.style.transform = "translateX(0)";
+        }, 1000);
+    } else {
+        if(voteCount == 0) {
+            console.log(`Vote for item ${index}`);
+            document.getElementsByClassName(`voteButton${index}`)[0].style.backgroundColor = "green";
+            document.getElementsByClassName(`voteButton${index}`)[0].style.color = "white";
+            voteCount++;
+        }
+        else {
+            document.getElementById("username").value == "";
+        }
+    }
+}
+
+function loginMenu() {
+    disableScroll();
+    document.getElementById("loginBackground").style.display = "block";
+}
+
+function disableScroll() {
+    document.body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+    document.body.style.overflow = 'auto';
+}
+
+function loginSend() {
+    enableScroll();
+    document.getElementById("loginBackground").style.display = "none";
 }

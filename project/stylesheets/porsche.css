@@ -146,11 +146,12 @@ body {
     text-align: center;
     border-radius: 1vw;
     margin: 1vw;
-    height: 60vh;
+    height: 70vh;
     width: 20vw;
 }
 
-#outputVote > div > button {
+.voteButton {
+    position: relative;
     background-color: #ef0a0a;
     width: 10vw;
     border: none;
@@ -160,7 +161,7 @@ body {
     transition: 0.5s transform;
 }
 
-#outputVote > div > button:hover {
+.voteButton {
     transform: translate(scale(2));
 }
 
@@ -304,10 +305,65 @@ button:hover {
     background-color: rgb(199, 199, 199);
 }
 
+#loginField {
+    position: absolute;
+    font-size: 3.2vw;
+    background-color: rgba(243, 243, 243, 0.733);
+    width: 70vw;
+    height: 60vh;
+    z-index: 11;
+    text-align: center;
+    margin-left: 15vw;
+    margin-top: 22vh;
+    border-radius: 2vw;
+}
+
+#loginBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: hsla(297, 59%, 34%, 1);
+    background: linear-gradient(90deg, hsla(297, 59%, 34%, 1) 0%, hsla(345, 74%, 58%, 1) 50%, hsla(22, 87%, 56%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(297, 59%, 34%, 1) 0%, hsla(345, 74%, 58%, 1) 50%, hsla(22, 87%, 56%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(297, 59%, 34%, 1) 0%, hsla(345, 74%, 58%, 1) 50%, hsla(22, 87%, 56%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#832388", endColorstr="#E3436B", GradientType=1 );
+}
+
+#username, #password, #send {
+    font-size: 2vw;
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 1vw;
+    padding: 1vw;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    margin: 1vw;
+}
+
+#send {
+    position: absolute;
+    font-size: 2.4vw;
+    width: 18vw;
+    margin-left: -37vw;
+    margin-top: 13vh;
+}
+
+#username:hover, #password:hover, #send:hover {
+    transform: scale(1.1);
+    background-color: blue;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /*Footer*/
 #footer {
     background-color: #565656;
-    height: 27vh;
+    height: 30vh;
 }
 
 #sources {

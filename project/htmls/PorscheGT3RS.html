@@ -41,7 +41,15 @@
                 <p1>Tri</p1><p2>ple</p2><p3>drive</p3>
             </div>
             <div id="shopButton">
-                <div id="login"><p>Login</p><img id="loginImage" src="../images/page/login.png" alt="Profile image"></div>
+                <div id="login" onclick="loginMenu()"><p>Login</p><img id="loginImage" src="../images/page/login.png" alt="Profile image"></div>
+                <div id="loginBackground">
+                    <div id="loginField">
+                        <h1>Login!</h1>
+                        <input id="username" type="text" placeholder="username here">
+                        <input id="password" type="password" placeholder="password here">
+                        <button id="send" onclick="loginSend()">Send</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
