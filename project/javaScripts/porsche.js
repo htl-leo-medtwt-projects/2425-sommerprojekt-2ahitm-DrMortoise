@@ -89,8 +89,8 @@ randomItems.forEach((item, index) => {
         <img id="voteImages" src="${item.img}" alt="${item.productName}">
         <h2>${item.productName}</h2>
         <p>${item.about}</p>
-
         <button class="voteButton voteButton${index}" onclick="voteScala(${index})">Your vote</button>
+        <p>Loge dich ein bevor du Votest!</p>
     `;
     outputVote.appendChild(productDiv);
 });
@@ -108,11 +108,20 @@ function voteScala(index) {
         setTimeout(() => {
             voteButton.style.transform = "translateX(0)";
         }, 1000);
+
     } else {
         if(voteCount == 0) {
             console.log(`Vote for item ${index}`);
             document.getElementsByClassName(`voteButton${index}`)[0].style.backgroundColor = "green";
             document.getElementsByClassName(`voteButton${index}`)[0].style.color = "white";
+
+            voteButton.style.transform = "translateY(-1vw)";
+        setTimeout(() => {
+            voteButton.style.transform = "translateY(1vw)";
+        }, 500);
+        setTimeout(() => {
+            voteButton.style.transform = "translateY(0)";
+        }, 1000);
             voteCount++;
         }
         else {
