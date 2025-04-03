@@ -74,6 +74,55 @@ body {
     left: 25vw;
 }
 
+#navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -1vh;
+    height: 10vh;
+    background-color: #565656;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+
+#navigation > #navigationButtons {
+    text-align: center;
+    font-size: 2.2vw;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.3vw;
+    background-color: black;
+}
+
+#navigation > #navigationButtons > a {
+    display: inline-block;
+    margin-top: 1.1vw;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+#navigation > #navigationButtons > a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease-out;
+}
+
+#navigation > #navigationButtons > a:hover::after {
+    transform: scaleX(1);
+}
+
 #aboutUsImage {
     margin-left: -25vw;
     width: 100vw;
@@ -357,20 +406,10 @@ body {
     height: 100vh;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*Footer*/
 #footer {
     background-color: #000000;
-    height: 27vh;
+    height: 32vh;
 }
 
 #sources {
