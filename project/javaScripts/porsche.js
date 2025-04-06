@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentSlideIndex = 0;
     const slides = [
         "../images/PorscheGT3RS/SlideshowImage01.png",
-        "../images/PorscheGT3RS/SlideshowImage02.jpg",
-        "../images/PorscheGT3RS/SlideshowImage03.jpg"
+        "../images/PorscheGT3RS/SlideshowImage02.png",
+        "../images/PorscheGT3RS/SlideshowImage03.png"
     ];
 
     const mainSlide = document.getElementById("mainSlide");
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         currentSlideIndex = (currentSlideIndex + 1) % slides.length;
     }
 
-    setInterval(showSlides, 5000);
+    setInterval(showSlides, 10000);
 });
 
 const items = [

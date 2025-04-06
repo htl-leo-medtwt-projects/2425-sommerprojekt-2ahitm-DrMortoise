@@ -158,8 +158,8 @@ body {
 #nextSlide {
     display: flex;
     position: absolute;
-    margin-top: -38vh;
-    margin-left: 60vw;
+    margin-top: -72vh;
+    margin-left: 20vw;
     border-radius: 2vw;
     border: 0.5vw solid black;
     z-index: 3;
@@ -169,8 +169,8 @@ body {
 #nextNextSlide {
     display: flex;
     position: absolute;
-    margin-top: -52vh;
-    margin-left: 75vw;
+    margin-top: -48vh;
+    margin-left: 59vw;
     border-radius: 2vw;
     border: 0.5vw solid black;
     z-index: 2;
@@ -197,7 +197,9 @@ body {
     margin: 1vw;
     height: 70vh;
     width: 20vw;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
+
 
 .voteButton {
     position: relative;
