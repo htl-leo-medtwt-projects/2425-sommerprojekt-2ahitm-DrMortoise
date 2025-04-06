@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheets/tripledrive.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="../javaScripts/tpd.js"></script>
     <title>Tripledrive</title>
 </head>
 <body>
@@ -17,7 +24,7 @@
     </div>
     <div>
         <div id="aboutMe">
-            <h2>Über mich</h2>
+            <h3>Über mich</h3>
             <p>Dieses Projekt wurde von mir im Rahmen eines Sommersemester-Projekts ins Leben gerufen. Innerhalb weniger Monate habe ich mit Leidenschaft und Hingabe an der Entwicklung gearbeitet, um eine kreative und praktische Lösung zu schaffen. Als Einzelperson strebe ich danach, Ideen schnell umzusetzen und Innovationen zu realisieren, die sowohl funktional als auch einzigartig sind.</p>
         </div>
         <img id="logoImage" src="../images/Tripledrive/logo.png" alt="logo Image">
@@ -57,6 +64,10 @@
             <p>In diesem Projekt dreht sich alles um drei legendäre Autos: den Porsche GT3 RS, den Audi R8 und den VW Käfer. Jedes dieser Fahrzeuge repräsentiert eine einzigartige Ära und eine eigene Philosophie des Automobilbaus. Vom modernen, leistungsstarken Porsche über den futuristischen Audi R8 bis hin zum zeitlosen Klassiker, dem VW Käfer – diese Autos verbinden Historie und Innovation auf faszinierende Weise. Dieses Projekt feiert nicht nur ihre Technik und Ästhetik, sondern lässt die Leidenschaft für außergewöhnliche Fahrzeuge spürbar werden. Tauche ein in die Welt dieser automobilen Meisterwerke!</p>
         </div>
     </div>
+
+    <h2>Hier kannst du uns finden</h2>
+
+    <div id="map"></div>
 
     <div id="footer">
         <div id="sources">
