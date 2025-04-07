@@ -219,17 +219,8 @@ h3 {
 /*Gehört immer ausgetauscht (STRG x, STRG V)*/
 .leaflet-popup-content-wrapper {
     cursor: default;
-    background-color: red;
+    background-color: green;
     letter-spacing: 1px;
     text-align: center;
     font-size: 1vw;
-    color: white;
-}
-
-.leaflet-popup-tip {
-    background-color: red;
-}
-
-.leaflet-popup-content {
-    background-color: red;
 }
