@@ -4,108 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheets/porsche.css">
-
-    <!-- unpkg -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <!-- jsdelivr -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
     <script src="../javaScripts/porsche.js" defer></script>
     <title>Porsche GT3 RS</title>
 </head>
-<body data-barba="wrapper">
-    <main data-barba="container" data-barba-namespace="porsche">
-        <div>
-            <video id="startVideo" autoplay src="../videos/Porsche_01.mp4"></video>
-            <div id="headline">Porsche GT3 RS</div>
-            <div id="underlineText">Herzlich willkommen! Schön, dass du hier bist. Scrolle nach unten, um mehr zu entdecken!</div>
-            <div id="logoName">
+<body>
+    <div>
+        <video id="startVideo" autoplay src="../videos/Porsche_01.mp4"></video>
+        <div id="headline">Porsche GT3 RS</div>
+        <div id="underlineText">Herzlich willkommen! Schön, dass du hier bist. Scrolle nach unten, um mehr zu entdecken!</div>
+        <div id="logoName">
+            <p1>Tri</p1><p2>ple</p2><p3>drive</p3>
+        </div>
+    </div>
+    <div id="navigation">
+        <div id="navigationButtons"><a href="../htmls/AudiR8.html">Audi r8</a></div>
+        <div id="navigationButtons"><a href="../htmls/Tripledrive.html">img</a></div>
+        <div id="navigationButtons"><a href="../htmls/VWKaefer.html">VW Käfer</a></div>
+    </div>
+    <div id="AboutPorsche">
+        <img id="aboutUsPorsche" src="../images/PorscheGT3RS/natureBackground.jpg" alt="background Image">
+        <div id="boxAboutUs"><p>Porsche ist eine deutsche Automarke, die für sportliche und luxuriöse Fahrzeuge bekannt ist. Gegründet 1931 in Stuttgart, hat sich das Unternehmen mit Modellen wie dem 911 einen legendären Ruf erarbeitet. Neben klassischen Sportwagen bietet Porsche auch SUVs und Elektroautos wie den Taycan an. Die Marke verbindet Tradition mit Innovation und ist zudem erfolgreich im Motorsport.</p></div>
+        <img id="aboutUsPorscheImage" src="../images/PorscheGT3RS/AboutUsPorsche.png" alt="Porsche img">
+    </div>
+    <div>
+        <div id="slideShowHeadline">
+            <img src="../images/PorscheGT3RS/SlideshowHeadline.jpg" alt="Slideshow">
+        </div>
+        <div id="slideShow">
+            <img id="mainSlide" src="../images/PorscheGT3RS/SlideshowImage01.png" alt="SlideshowImage">
+            <img id="nextSlide" src="../images/PorscheGT3RS/SlideshowImage02.png" alt="SlideshowImage">
+            <img id="nextNextSlide" src="../images/PorscheGT3RS/SlideshowImage03.png" alt="SlideshowImage">
+        </div>
+    </div>
+    <div>
+        <img id="shopImage" src="../images/PorscheGT3RS/Shop.jpg" alt="Shop">
+        <div id="outputVote"></div>
+
+        <div id="footerShop">
+            <div id="logoNameShop">
                 <p1>Tri</p1><p2>ple</p2><p3>drive</p3>
             </div>
-        </div>
-        <div id="navigation">
-            <div id="navigationButtons"><a href="../htmls/AudiR8.html">Audi r8</a></div>
-            <div id="navigationButtons"><a href="../htmls/Tripledrive.html">img</a></div>
-            <div id="navigationButtons"><a href="../htmls/VWKaefer.html">VW Käfer</a></div>
-        </div>
-        <div id="AboutPorsche">
-            <img id="aboutUsPorsche" src="../images/PorscheGT3RS/natureBackground.jpg" alt="background Image">
-            <div id="boxAboutUs"><p>Porsche ist eine deutsche Automarke, die für sportliche und luxuriöse Fahrzeuge bekannt ist. Gegründet 1931 in Stuttgart, hat sich das Unternehmen mit Modellen wie dem 911 einen legendären Ruf erarbeitet. Neben klassischen Sportwagen bietet Porsche auch SUVs und Elektroautos wie den Taycan an. Die Marke verbindet Tradition mit Innovation und ist zudem erfolgreich im Motorsport.</p></div>
-            <img id="aboutUsPorscheImage" src="../images/PorscheGT3RS/AboutUsPorsche.png" alt="Porsche img">
-        </div>
-        <div>
-            <div id="slideShowHeadline">
-                <img src="../images/PorscheGT3RS/SlideshowHeadline.jpg" alt="Slideshow">
-            </div>
-            <div id="slideShow">
-                <img id="mainSlide" src="../images/PorscheGT3RS/SlideshowImage01.png" alt="SlideshowImage">
-                <img id="nextSlide" src="../images/PorscheGT3RS/SlideshowImage02.png" alt="SlideshowImage">
-                <img id="nextNextSlide" src="../images/PorscheGT3RS/SlideshowImage03.png" alt="SlideshowImage">
-            </div>
-        </div>
-        <div>
-            <img id="shopImage" src="../images/PorscheGT3RS/Shop.jpg" alt="Shop">
-            <div id="outputVote"></div>
-    
-            <div id="footerShop">
-                <div id="logoNameShop">
-                    <p1>Tri</p1><p2>ple</p2><p3>drive</p3>
-                </div>
-                <div id="shopButton">
-                    <div id="login" onclick="loginMenu()"><p>Login</p><img id="loginImage" src="../images/page/login.png" alt="Profile image"></div>
-                    <div id="loginBackground">
-                        <div id="loginField">
-                            <h1>Login!</h1>
-                            <input id="username" type="text" placeholder="username here">
-                            <input id="password" type="password" placeholder="password here">
-                            <button id="send" onclick="loginSend()">Send</button>
-                        </div>
+            <div id="shopButton">
+                <div id="login" onclick="loginMenu()"><p>Login</p><img id="loginImage" src="../images/page/login.png" alt="Profile image"></div>
+                <div id="loginBackground">
+                    <div id="loginField">
+                        <h1>Login!</h1>
+                        <input id="username" type="text" placeholder="username here">
+                        <input id="password" type="password" placeholder="password here">
+                        <button id="send" onclick="loginSend()">Send</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="comparisonPage">
-            <img id="comparison" src="../images/PorscheGT3RS/Vergleich.jpg" alt="comparison">
-            <div id="cards">
-                <div id="cardOne">
-                    <img id="comparisonPorsche911" src="../images/PorscheGT3RS/porsche_911_gt3_vergleich.png" alt="Porsche 911">
-                    <p>Porsche 911</p>
-                    <ul id="porsche911list">
-                        <li>Der Porsche 911 wurde 1964 eingeführt und ist eine der bekanntesten Sportwagen-Ikonen der Welt.</li>
-                        <li>Sein charakteristischer Sechszylinder-Boxermotor sitzt traditionell im Heck und sorgt für das typische Fahrverhalten.</li>
-                        <li>Über die Jahrzehnte hinweg wurde der 911 kontinuierlich weiterentwickelt, bleibt aber seinem klassischen Design treu.</li>
-                    </ul>
-                </div>
-                <div id="cardTwo">
-                    <img id="comparisonPorscheGT3Rs" src="../images/PorscheGT3RS/vergleichImage01.png" alt="Porsche GT3 RS">
-                    <p>Porsche GT3 RS</p>
-                    <ul id="porscheGT3list">
-                        <li>Der GT3 RS ist die radikalste straßenzugelassene Version des 911, entwickelt mit Fokus auf Motorsport-Technologie.</li>
-                        <li>Er verfügt über einen hochdrehenden 4,0-Liter-Boxermotor mit über 500 PS und eine extreme Aerodynamik.</li>
-                        <li>Durch konsequenten Leichtbau, inklusive Carbon-Teilen, ist er besonders für den Einsatz auf der Rennstrecke optimiert.</li>
-                    </ul>
-                </div>
+    </div>
+    <div id="comparisonPage">
+        <img id="comparison" src="../images/PorscheGT3RS/Vergleich.jpg" alt="comparison">
+        <div id="cards">
+            <div id="cardOne">
+                <img id="comparisonPorsche911" src="../images/PorscheGT3RS/porsche_911_gt3_vergleich.png" alt="Porsche 911">
+                <p>Porsche 911</p>
+                <ul id="porsche911list">
+                    <li>Der Porsche 911 wurde 1964 eingeführt und ist eine der bekanntesten Sportwagen-Ikonen der Welt.</li>
+                    <li>Sein charakteristischer Sechszylinder-Boxermotor sitzt traditionell im Heck und sorgt für das typische Fahrverhalten.</li>
+                    <li>Über die Jahrzehnte hinweg wurde der 911 kontinuierlich weiterentwickelt, bleibt aber seinem klassischen Design treu.</li>
+                </ul>
+            </div>
+            <div id="cardTwo">
+                <img id="comparisonPorscheGT3Rs" src="../images/PorscheGT3RS/vergleichImage01.png" alt="Porsche GT3 RS">
+                <p>Porsche GT3 RS</p>
+                <ul id="porscheGT3list">
+                    <li>Der GT3 RS ist die radikalste straßenzugelassene Version des 911, entwickelt mit Fokus auf Motorsport-Technologie.</li>
+                    <li>Er verfügt über einen hochdrehenden 4,0-Liter-Boxermotor mit über 500 PS und eine extreme Aerodynamik.</li>
+                    <li>Durch konsequenten Leichtbau, inklusive Carbon-Teilen, ist er besonders für den Einsatz auf der Rennstrecke optimiert.</li>
+                </ul>
             </div>
         </div>
-        <div id="footer">
-            <div id="sources">
-                <p>https://chatgpt.com/</p>
-                <p>https://www.porsche.at/</p>
-                <p>https://at.pinterest.com/</p>
-            </div>
-            <div id="phoneNumber">
-                <p> Tel: +49 711 911 75550</p>
-            </div>
-            <div id="socials">
-                <a href="https://disboard.org/de/servers/tag/porsche"><img src="../images/socialMedia/Discord.png" alt="discord icon"></a>
-                <a href="https://www.facebook.com/porsche/?locale=de_DE"><img src="../images/socialMedia/Facebook_icon.png" alt="Facebook icon"></a>
-                <a href="https://www.instagram.com/porsche/?hl=de"><img src="../images/socialMedia/Instagram_icon.png" alt="Instagram icon"></a>
-                <a href="https://x.com/Porsche?"><img src="../images/socialMedia/X.png" alt="Twitter icon"></a>
-            </div>
-            <img id="logo" src="../images/PorscheGT3RS/Logo.png" alt="Porsche Logo">
+    </div>
+    <div id="footer">
+        <div id="sources">
+            <p>https://chatgpt.com/</p>
+            <p>https://www.porsche.at/</p>
+            <p>https://at.pinterest.com/</p>
         </div>
-    </main>
+        <div id="phoneNumber">
+            <p> Tel: +49 711 911 75550</p>
+        </div>
+        <div id="socials">
+            <a href="https://disboard.org/de/servers/tag/porsche"><img src="../images/socialMedia/Discord.png" alt="discord icon"></a>
+            <a href="https://www.facebook.com/porsche/?locale=de_DE"><img src="../images/socialMedia/Facebook_icon.png" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/porsche/?hl=de"><img src="../images/socialMedia/Instagram_icon.png" alt="Instagram icon"></a>
+            <a href="https://x.com/Porsche?"><img src="../images/socialMedia/X.png" alt="Twitter icon"></a>
+        </div>
+        <img id="logo" src="../images/PorscheGT3RS/Logo.png" alt="Porsche Logo">
+    </div>
 </body>
 </html>

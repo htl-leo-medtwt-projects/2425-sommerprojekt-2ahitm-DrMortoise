@@ -1,6 +1,3 @@
-import barba from '@barba/core';
-import { gsap } from 'gsap';
-
 document.addEventListener("DOMContentLoaded", function() {
     let currentSlideIndex = 0;
     const slides = [
@@ -150,22 +147,3 @@ function loginSend() {
     enableScroll();
     document.getElementById("loginBackground").style.display = "none";
 }
-
-//barba test
-barba.init({
-    transitions: [{
-      name: 'opacity-transition',
-      leave(data) {
-        return gsap.to(data.current.container, {
-          opacity: 0,
-          duration: 1 // Optional: specify duration (in seconds)
-        });
-      },
-      enter(data) {
-        return gsap.from(data.next.container, {
-          opacity: 0,
-          duration: 1 // Optional: specify duration (in seconds)
-        });
-      }
-    }]
-});
