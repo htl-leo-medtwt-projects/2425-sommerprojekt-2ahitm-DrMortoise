@@ -60,6 +60,10 @@ body {
     z-index: 30;
 }
 
+#logoNavigation {
+    width: 5vw;
+}
+
 #navigation > #navigationButtons {
     text-align: center;
     font-size: 2.2vw;
@@ -71,7 +75,7 @@ body {
 
 #navigation > #navigationButtons > a {
     display: inline-block;
-    margin-top: 1.1vw;
+    margin-top: 2vw;
     text-decoration: none;
     color: white;
     position: relative;
@@ -84,7 +88,7 @@ body {
     content: '';
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 8px;
     bottom: 0;
     left: 0;
     background-color: white;
