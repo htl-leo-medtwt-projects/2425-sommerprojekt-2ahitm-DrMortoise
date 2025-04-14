@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: BebasNeue;
     background-color: black;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -152,44 +153,63 @@ body {
     width: 100vw;
 }
 
-/*cards*/
 
-/*#cards {              Code for java script, maybe good for later
+/* Kartenstapel */
+#card-container {
+    width: 30vw;
+    height: 60vh;
+    position: relative;
+    margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
-} */
+    align-items: center;    
+}
 
 #cards {
-    width: 20vw;
-    height: 80vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-#cards > div {
+.card {
     position: absolute;
-    width: 25vw;
-    height: 70vh;
-    left: 60vw;
-    margin: 5vh;
-    margin-left: 6vw;
-    background-color: #c500e8d7;
-    transition: 0.5s background-color;
+    width: 100%;
+    height: 100%;
+    background-color: #c500e8;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#cards > div:hover {
-    cursor: pointer;
-    background-color: #7c0092d7;
+/* Stapel-Effekt */
+.card {
+    transform: translateY(calc(var(--card-index) * 20px));
 }
 
-#cards > p {
-    color: white;
-    font-size: 3vw;
-    margin-top: -2vw;
-    margin-bottom: -1vw;
-    text-align: end;
-    width: 85vw;
+.card.active {
+    z-index: 3;
 }
+
+.card img {
+    width: 80%;
+    height: 44%;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2vw;
+    text-align: center;
+    color: black;
+}
+
 
 /*Produktionsstätte*/
 
