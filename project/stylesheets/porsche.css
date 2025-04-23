@@ -4,6 +4,7 @@ body {
     font-family: BebasNeue;
     letter-spacing: 0.3vw;
     background-color: black;
+    user-select: none;
 }
 
 @font-face {
@@ -122,7 +123,7 @@ body {
 #boxAboutUs {
     display: flex;
     position: absolute;
-    margin-top: 13vh;
+    margin-top: 69vh;
     left: 17.5vw;
     padding: 3em;
     padding-bottom: 18vh;
@@ -141,7 +142,7 @@ body {
 #aboutUsPorscheImage {
     position: absolute;
     left: 15vw;
-    margin-top: 28vh;
+    margin-top: 88vh;
     width: 35vw;    
 }
 

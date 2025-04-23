@@ -90,7 +90,7 @@ randomItems.forEach((item, index) => {
         <h2>${item.productName}</h2>
         <p>${item.about}</p>
         <button class="voteButton voteButton${index}" onclick="voteScala(${index})">Your vote</button>
-        <p>Loge dich ein bevor du Votest!</p>
+        <p>Registriere dich bevor du Votest!</p>
     `;
     outputVote.appendChild(productDiv);
 });
@@ -99,7 +99,7 @@ function voteScala(index) {
     const voteButton = document.querySelector(`.voteButton${index}`);
 
     if (document.getElementById("username").value == "" || document.getElementById("password").value == "") {
-        console.log("please login");
+        console.log("please regist");
 
         voteButton.style.transform = "translateX(-2vw)";
         setTimeout(() => {

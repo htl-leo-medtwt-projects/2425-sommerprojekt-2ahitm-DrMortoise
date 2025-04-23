@@ -126,7 +126,7 @@ document.getElementById('weight').addEventListener('input', function () {
 
 //Evaluation
 
-document.getElementById("submitFeedbackButton").addEventListener("click", function() {
+document.getElementById("submitFeedbackButton").addEventListener("click", function () {
   const feedbackInput = document.getElementById("feedbackInput").value;
   const feedbackDisplay = document.getElementById("feedbackDisplay");
 
@@ -140,9 +140,34 @@ document.getElementById("submitFeedbackButton").addEventListener("click", functi
       feedbackMessage.appendChild(feedbackText);
       feedbackDisplay.appendChild(feedbackMessage);
 
-      // Leeren des Eingabefelds nach dem Senden
+      saveFeedbackToLocalStorage(feedbackInput);
+
       document.getElementById("feedbackInput").value = "";
   } else {
       alert("Bitte geben Sie eine Bewertung ein!");
   }
 });
+
+function saveFeedbackToLocalStorage(message) {
+  let feedbackList = JSON.parse(localStorage.getItem("feedbackMessages")) || [];
+  feedbackList.push(message);
+  localStorage.setItem("feedbackMessages", JSON.stringify(feedbackList));
+}
+
+function loadFeedbackFromLocalStorage() {
+  const feedbackDisplay = document.getElementById("feedbackDisplay");
+  let feedbackList = JSON.parse(localStorage.getItem("feedbackMessages")) || [];
+
+  feedbackList.forEach(message => {
+      const feedbackMessage = document.createElement("div");
+      feedbackMessage.className = "feedback-message";
+
+      const feedbackText = document.createElement("p");
+      feedbackText.textContent = message;
+
+      feedbackMessage.appendChild(feedbackText);
+      feedbackDisplay.appendChild(feedbackMessage);
+  });
+}
+
+window.addEventListener("load", loadFeedbackFromLocalStorage);
