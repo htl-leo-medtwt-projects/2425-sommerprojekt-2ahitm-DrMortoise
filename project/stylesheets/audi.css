@@ -175,7 +175,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #c500e8;
+    background-color: #b100d0;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
@@ -247,7 +247,7 @@ body {
     height: 30vw;
     background: linear-gradient(to bottom, #9966ff 0%, #cc66ff 100%);
     border-radius: 20vw;
-    margin-left: 12vw;
+    margin-left: 10vw;
 }
 
 #inlineCircle {
@@ -283,8 +283,8 @@ body {
 }
 
 #kmH {
-    margin-left: 10.2vw;
-    margin-top: 11vw;
+    margin-left: 6.4vw;
+    margin-top: 1.1vw;
     left: auto;
 }
 
@@ -295,8 +295,8 @@ body {
 }
 
 #mS {
-    margin-left: 10.2vw;
-    margin-top: 16vw;
+    margin-left: 7.2vw;
+    margin-top: -9vw;
     left: auto;
 }
 
@@ -323,29 +323,14 @@ body {
     font-size: 2vw;
     color: white;
     margin-top: 1vh;
+    margin-left: 0vw;
+    text-align: center;
 }
-
-.headlineOne {
-    margin-left: 11.1vw;
-}
-
-.headlineTwo {
-    margin-left: 7vw;
-}
-
-.headlineThree {
-    margin-left: 9vw;
-}
-
-.headlineFour {
-    margin-left: 12.6vw;
-}
-
 
 #model {
     display: block;
     font-size: 1vw;
-    margin-left: 11.3vw;
+    margin-left: 12.7vw;
     background-color: black;
     color: white;
     border: none;
@@ -355,7 +340,7 @@ body {
 #weight {
     display: block;
     font-size: 1vw;
-    margin-left: 14.2vw;
+    margin-left: 15.6vw;
     background-color: black;
     color: white;
     border: none;
@@ -365,7 +350,7 @@ body {
 #weather {
     display: block;
     font-size: 1vw;
-    margin-left: 12.2vw;
+    margin-left: 13.6vw;
     background-color: black;
     color: white;
     border: none;
@@ -375,7 +360,7 @@ body {
 #tires {
     display: block;
     font-size: 1vw;
-    margin-left: 12.6vw;
+    margin-left: 14.2vw;
     background-color: black;
     color: white;
     border: none;
@@ -409,7 +394,7 @@ body {
 #calculate {
     display: block;
     font-size: 1.4vw;
-    margin-left: 11.54vw;
+    margin-left: 13.1vw;
     background-color: black;
     color: white;
     border: none;
@@ -428,6 +413,142 @@ body {
 
 #Evaluation {
     height: 100vh;
+}
+
+/*Evaluation*/
+
+#feedback {
+    margin-top: 12vh;
+    height: 120vh;
+}
+
+header.site-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 2vw;
+    text-align: center;
+}
+
+header.site-header .navbar a {
+    color: white;
+    margin: 0 1vw;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header.site-header .navbar a:hover {
+    text-decoration: underline;
+}
+
+main .section {
+    padding: 2vw;
+    margin: 2vw 0;
+    background-color: white;
+    border-radius: 8vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer.site-footer {
+    text-align: center;
+    padding: 1vw;
+    background-color: #007BFF;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.evaluation-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feedback-box {
+    width: 100%;
+    height: 160px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackDisplay {
+    width: 80vw;
+    height: 60vh;
+    position: relative;
+    margin-left: -30vw;
+    background: linear-gradient(to bottom, #cc66ff 0%, #9966ff 100%);
+    border: 1px solid #000000;
+    border-radius: 3vw;
+    color: white;
+}
+
+#feedbackInput {
+    width: 70vw;
+    height: 10vh;
+    font-family: BebasNeue;
+    font-size: 1.5vw;
+    margin-left: -28vw;
+    margin-top: 2vh;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 1vw;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#submitFeedbackButton {
+    width: 20vw;
+    padding: 12px;
+    background-color: #cc66ff;
+    transition: 0.5s background-color;
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    font-size: 2vw;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: -4vw;
+    margin-top: 2vh;
+}
+
+#submitFeedbackButton:hover {
+    background-color: #8e24c3;
+}
+
+.feedback-message {
+    background: #cc66ff;
+    margin: 1vw;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.feedback-message > p {
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0.5vw;
+    padding: 0vw;
+}
+
+#evaluationImg {
+    width: 100vw;
 }
 
 /*Footer*/

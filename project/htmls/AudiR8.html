@@ -46,9 +46,7 @@
             <img src="../images/Audir8/Markenpreise.png" alt="Brand Prices">
         </div>
 
-
         <div id="card-container"></div>
-
 
     </div>
     <div>
@@ -70,9 +68,9 @@
         <div id="AccelerationValue">
             <div id="inlineCircle">
                 <!--Java script value-->
-                <p id="kilometersPerHour">3.6 <p id="kmH">km/h</p></p>
+                <p id="kilometersPerHour"> <p id="kmH"></p></p>
                 <!--converter to m/s-->
-                <p id="metersPerSecond">10 <p id="mS">m/s</p></p>
+                <p id="metersPerSecond"> <p id="mS"></p></p>
             </div>
         </div>
     </div>
@@ -80,17 +78,17 @@
         <div id="calculator">
             <h2>Audi R8 Performance-Rechner</h2>
         
-        <label id="headlines" class="headlineOne">Modell wählen:</label>
+        <label id="headlines">Modell wählen:</label>
         <select id="model">
             <option value="3.1">R8 V10 Plus</option>
             <option value="3.4">R8 V10</option>
             <option value="2.8">R8 V10 Performance</option>
         </select>
         
-        <label id="headlines" class="headlineTwo">Zusätzliche Beladung (kg): <span id="weightValue">0</span> kg</label>
+        <label id="headlines">Zusätzliche Beladung (kg): <span id="weightValue">0</span> kg</label>
         <input id="weight" type="number" id="weight" min="0" max="200" value="0" step="10">
         
-        <label id="headlines" class="headlineThree">Wetterbedingungen:</label>
+        <label id="headlines">Wetterbedingungen:</label>
         <select id="weather">
             <option value="1">Trocken</option>
             <option value="1.2">Nass</option>
@@ -98,7 +96,7 @@
             <option value="1.8">Vereister Boden</option>
         </select>
         
-        <label id="headlines" class="headlineFour">Reifentyp:</label>
+        <label id="headlines">Reifentyp:</label>
         <select id="tires">
             <option value="1">Straßenreifen</option>
             <option value="0.9">Semi-Slicks</option>
@@ -106,12 +104,19 @@
         </select>
         
         <button id="calculate">Berechnen</button>
-        <p class="result">
+        <p class="result"></p>
         </div>
     </div>
-    <div>
-        <div id="Evaluation"></div>
-    </div>
+
+
+    <section id="feedback" class="section evaluation-section">
+        <img id="evaluationImg" src="../images/Audir8/bewertungen.png" alt="evaluation">
+        <div class="evaluation-container">
+            <div id="feedbackDisplay" class="feedback-box"></div>
+            <textarea id="feedbackInput" placeholder="Schreiben Sie Ihre Bewertung..."></textarea>
+            <button id="submitFeedbackButton">Send</button>
+        </div>
+    </section>
 
 
     <div id="footer">

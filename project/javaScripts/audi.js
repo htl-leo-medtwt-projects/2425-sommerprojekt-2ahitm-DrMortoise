@@ -88,3 +88,61 @@
     }, 500);
   });
 })();
+
+//Performance Calculator
+
+document.getElementById('calculate').addEventListener('click', function () {
+  // Eingabewerte auslesen
+  const modelFactor = parseFloat(document.getElementById('model').value);
+  const weight = parseFloat(document.getElementById('weight').value);
+  const weatherFactor = parseFloat(document.getElementById('weather').value);
+  const tireFactor = parseFloat(document.getElementById('tires').value);
+
+  if (isNaN(modelFactor) || isNaN(weight) || isNaN(weatherFactor) || isNaN(tireFactor)) {
+      alert("Bitte füllen Sie alle Felder korrekt aus.");
+      return;
+  }
+
+  const weightEffect = (weight / 10) * 0.01;
+
+  const baseTime = modelFactor;
+  const adjustedTime = (baseTime + weightEffect) * weatherFactor * tireFactor;
+
+  const maxSpeedKmH = 200 - (adjustedTime * 10);
+  const maxSpeedMS = maxSpeedKmH / 3.6;
+
+  const finalSpeedKmH = Math.max(0, maxSpeedKmH); 
+  const finalSpeedMS = Math.max(0, maxSpeedMS);
+
+  document.getElementById('kilometersPerHour').innerHTML = `
+      ${finalSpeedKmH.toFixed(1)} <span id="kmH">km/h</span>`;
+  document.getElementById('metersPerSecond').innerHTML = `
+      ${finalSpeedMS.toFixed(1)} <span id="mS">m/s</span>`;
+});
+
+document.getElementById('weight').addEventListener('input', function () {
+  document.getElementById('weightValue').textContent = this.value;
+});
+
+//Evaluation
+
+document.getElementById("submitFeedbackButton").addEventListener("click", function() {
+  const feedbackInput = document.getElementById("feedbackInput").value;
+  const feedbackDisplay = document.getElementById("feedbackDisplay");
+
+  if (feedbackInput.trim() !== "") {
+      const feedbackMessage = document.createElement("div");
+      feedbackMessage.className = "feedback-message";
+
+      const feedbackText = document.createElement("p");
+      feedbackText.textContent = feedbackInput;
+
+      feedbackMessage.appendChild(feedbackText);
+      feedbackDisplay.appendChild(feedbackMessage);
+
+      // Leeren des Eingabefelds nach dem Senden
+      document.getElementById("feedbackInput").value = "";
+  } else {
+      alert("Bitte geben Sie eine Bewertung ein!");
+  }
+});
