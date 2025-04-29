@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheets/vs.css">
-    <script src="../javaScripts/vw.js"></script>
+    <script src="../javaScripts/vw.js" defer></script>
     <title>VW Käfer</title>
 </head>
 <body data-barba="wrapper">
@@ -23,17 +23,18 @@
         </div>
         <div>
             <div id="slideshow">
-                <div id="headlinePastImage">
-                    <img id="past" src="../images/VWKäfer/Vergangenheit.png" alt="Past">
+                <img id="bigImage" class="big-image" src="../images/VWKäfer/SlideshowImages/VWSlideshowImage01.png" alt="Großes Bild">
+                <div class="preview-images" id="previewImages">
+                  <img src="../images/VWKäfer/SlideshowImages/VWSlideshowImage02.png" alt="Vorschau 1">
+                  <img src="../images/VWKäfer/SlideshowImages/VWSlideshowImage03.png" alt="Vorschau 2">
+                  <img src="../images/VWKäfer/SlideshowImages/VWSlideshowImage04.png" alt="Vorschau 3">
+                  <img src="../images/VWKäfer/SlideshowImages/VWSlideshowImage05.png" alt="Vorschau 4">
                 </div>
-                <img id="backgroundSlideshow" src="../images/VWKäfer/background_Slideshow.png" alt="Slideshow">
-                <div id="slideShowMainImage">
-                    <img id="arrowLeft" src="../images/arrow.png" alt="arrow left">
-                    <img id="mainImage" src="../images/VWKäfer/alteVWKäfer.png" alt="Main Image">
-                    <img id="arrowRight" src="../images/arrow.png" alt="arrow right">
-                    <div id="shadowImage"></div>
+                <div class="controls">
+                  <button id="prevButton">Zurück</button>
+                  <button id="nextButton">Weiter</button>
                 </div>
-            </div>
+              </div>
         </div>
         <div>
             <div id="videoHeadline">
