@@ -226,7 +226,6 @@ body {
     color: white;
 }
 
-
 /*Produktionsstätte*/
 
 #headlineImageProduce > img {
@@ -496,6 +495,7 @@ footer.site-footer {
 #feedbackDisplay {
     width: 80vw;
     height: 60vh;
+    margin-left: -5vw;
     margin-top: 32vh;
     margin-bottom: -28vh;
     transform: translate(-30vw, -50%);
@@ -510,7 +510,7 @@ footer.site-footer {
     height: 10vh;
     font-family: BebasNeue;
     font-size: 1.5vw;
-    margin-left: -28vw;
+    margin-left: -30vw;
     margin-top: 2vh;
 }
 
@@ -537,7 +537,7 @@ textarea {
     font-size: 2vw;
     cursor: pointer;
     font-weight: bold;
-    margin-left: -2vw;
+    margin-left: -6vw;
     margin-top: 2vh;
 }
 

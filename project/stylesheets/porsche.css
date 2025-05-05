@@ -350,7 +350,9 @@ button:hover {
 }
 
 #porsche911list, #porscheGT3list {
+    list-style: none;
     width: 26vw;
+    margin-left: 1vw;
     text-align: center;
 }
 
