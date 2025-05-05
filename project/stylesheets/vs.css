@@ -146,25 +146,22 @@ body {
     width: 100vw;
 }
 
-#videoHeadline {
-    margin-top: 100vh;
-}
-
 #videoImage {
     width: 100vw;
 }
 
 #videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100vw;
     height: 40vh;
 }
 
-#videos > video {
+#videos > video, #videos > iframe {
     margin: 2vw;
-}
-
-#videos > iframe {
-    margin: 2vw;
+    border-radius: 1vw;
+    height: 35vh;
+    width: 30vw;
 }
 
 #comparisonHeadline {
@@ -181,7 +178,6 @@ body {
 
 #cards > div {
     border-radius: 1vw;
-    background-color: gray;
     height: 80vh;
 }
 
@@ -197,15 +193,12 @@ body {
     width: 30vw;
 }
 
-#comparisonCamero {
-    width: 32vw;
-    margin-top: 4.2vw;
-    margin-left: -2vw;
-}
-
-#comparisonVWKäfer {
+#comparisonVWBus, #comparisonVWKäfer {
+    position: relative;
     width: 30vw;
-    margin-top: 3vw;
+    margin-top: -5vw;
+    height: 90vh;
+    margin-bottom: 3vw;
 }
 
 #cards > div > p {
@@ -214,8 +207,9 @@ body {
     padding: 1vw;
     width: 22vw;
     margin-left: 3vw;
+    margin-top: 1vw;
     border-radius: 1vw;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(255, 0, 0);
 }
 
 #guessingBoxes {
@@ -317,6 +311,15 @@ body {
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
     z-index: 1;
+  }
+
+  #prevButton, #nextButton {
+    margin-top: 88vh;
+    font-family: BebasNeue;
+    letter-spacing: 5px;
+    font-size: 2vw;
+    border-radius: 1vw;
+    padding: 0.8vw;
   }
 
   .preview-images {
