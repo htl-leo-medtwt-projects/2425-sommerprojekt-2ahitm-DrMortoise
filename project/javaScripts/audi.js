@@ -4,50 +4,51 @@
           <div class="card active">
               <img src="../images/Audir8/Kartenstapel_imgs/img01.png" alt="Bild 1">
               <ul>
-                  <li>Deutschland: 200€</li>
-                  <li>USA: $250</li>
-                  <li>Japan: ¥30,000</li>
-                  <li>Großbritannien: £180</li>
+                  <li>Deutschland: 224.445€</li>
+                  <li>USA: $224,995</li>
+                  <li>Japan: ¥25,800,000</li>
+                  <li>Großbritannien: £189,990</li>
               </ul>
           </div>
           <div class="card">
               <img src="../images/Audir8/Kartenstapel_imgs/img02.png" alt="Bild 2">
               <ul>
-                  <li>Deutschland: 300€</li>
-                  <li>USA: $350</li>
-                  <li>Japan: ¥40,000</li>
-                  <li>Großbritannien: £280</li>
+                  <li>Deutschland: 277.632€</li>
+                  <li>USA: $277,995</li>
+                  <li>Japan: ¥31,000,000</li>
+                  <li>Großbritannien: £231,500</li>
               </ul>
           </div>
           <div class="card">
               <img src="../images/Audir8/Kartenstapel_imgs/img03.png" alt="Bild 3">
               <ul>
-                  <li>Deutschland: 400€</li>
-                  <li>USA: $450</li>
-                  <li>Japan: ¥50,000</li>
-                  <li>Großbritannien: £380</li>
+                  <li>Deutschland: 303.346€</li>
+                  <li>USA: $303,990</li>
+                  <li>Japan: ¥33,500,000</li>
+                  <li>Großbritannien: £249,000</li>
               </ul>
           </div>
           <div class="card">
               <img src="../images/Audir8/Kartenstapel_imgs/img04.png" alt="Bild 4">
               <ul>
-                  <li>Deutschland: 500€</li>
-                  <li>USA: $550</li>
-                  <li>Japan: ¥60,000</li>
-                  <li>Großbritannien: £480</li>
+                  <li>Deutschland: 224.445€</li>
+                  <li>USA: $224,995</li>
+                  <li>Japan: ¥25,800,000</li>
+                  <li>Großbritannien: £189,990</li>
               </ul>
           </div>
           <div class="card">
               <img src="../images/Audir8/Kartenstapel_imgs/img05.png" alt="Bild 5">
               <ul>
-                  <li>Deutschland: 600€</li>
-                  <li>USA: $650</li>
-                  <li>Japan: ¥70,000</li>
-                  <li>Großbritannien: £580</li>
+                  <li>Deutschland: 277.632€</li>
+                  <li>USA: $277,995</li>
+                  <li>Japan: ¥31,000,000</li>
+                  <li>Großbritannien: £231,500</li>
               </ul>
           </div>
       </div>
   `;
+  
 
   const targetElement = document.getElementById('card-container');
   if (targetElement) targetElement.innerHTML = cardsHTML;

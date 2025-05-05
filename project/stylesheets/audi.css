@@ -177,7 +177,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #b100d0;
+    background: linear-gradient(to top, #cc00ff 0%, #ff99ff 100%);
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
@@ -210,6 +210,20 @@ body {
     font-size: 1.2vw;
     text-align: center;
     color: black;
+}
+
+.card > ul > li {
+    padding: 0.7vw;
+    border: 5px solid #000000;
+    margin: 0.2vw;
+    border-radius: 1vw;
+    color: black;
+    transition: 0.5s color, 0.5s background-color;
+}
+
+.card > ul > li:hover {
+    background-color: #000000;
+    color: white;
 }
 
 
