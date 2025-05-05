@@ -14,7 +14,6 @@ const bigImage = document.getElementById('bigImage');
       bigImage.classList.add('stretch-animation');
       setTimeout(() => bigImage.classList.remove('stretch-animation'), 500);
 
-      // Update preview images
       for (let i = 0; i < previewImages.length; i++) {
         const previewIndex = (index + 1 + i) % images.length;
         previewImages[i].src = images[previewIndex];
@@ -33,5 +32,4 @@ const bigImage = document.getElementById('bigImage');
       updateSlideshow(currentIndex);
     });
 
-    // Initialize the slideshow
     updateSlideshow(currentIndex);

@@ -194,22 +194,36 @@ body {
 }
 
 #comparisonVWBus, #comparisonVWKäfer {
-    position: relative;
+    position: absolute;
     width: 30vw;
     margin-top: -5vw;
     height: 90vh;
     margin-bottom: 3vw;
+    z-index: -1;
 }
 
 #cards > div > p {
     font-size: 1.4vw;
     text-align: center;
+    letter-spacing: 2px;
     padding: 1vw;
     width: 22vw;
     margin-left: 3vw;
     margin-top: 1vw;
     border-radius: 1vw;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(225, 228, 192, 0.622);
+}
+
+#cards > div > h1 {
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 1vw;
+    width: 22vw;
+    margin-left: 3vw;
+    margin-top: 1vw;
+    border-radius: 1vw;
+    background-color: rgba(206, 218, 74, 0.605);
 }
 
 #guessingBoxes {
@@ -332,8 +346,8 @@ body {
   }
 
   .preview-images img {
-    width: 80px;
-    height: 120px;
+    width: 5vw;
+    height: 8vw;
     border-radius: 10px;
     object-fit: cover;
     transition: transform 0.5s ease, opacity 0.5s ease;

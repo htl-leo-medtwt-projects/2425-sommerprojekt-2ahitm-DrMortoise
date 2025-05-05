@@ -92,7 +92,6 @@
 //Performance Calculator
 
 document.getElementById('calculate').addEventListener('click', function () {
-  // Eingabewerte auslesen
   const modelFactor = parseFloat(document.getElementById('model').value);
   const weight = parseFloat(document.getElementById('weight').value);
   const weatherFactor = parseFloat(document.getElementById('weather').value);
