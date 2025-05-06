@@ -5,6 +5,7 @@ body {
     letter-spacing: 0.3vw;
     background-color: black;
     user-select: none;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -152,8 +153,15 @@ body {
     width: 100vw;
 }
 
-#slideshowHeadline {
+.scrollCar {
+    opacity: 1;
+}
+
+#slideshowHeadline, #shopImage {
     width: 100vw;
+}
+
+#slideshowHeadline {
     margin-top: 19vh;
 }
 
