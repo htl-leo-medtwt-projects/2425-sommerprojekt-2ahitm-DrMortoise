@@ -10,7 +10,9 @@
      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
-     <script src="../javaScripts/tpd.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+     <script src="../javaScripts/tpd.js" defer></script>
     <title>Tripledrive</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
         </div>
     </div>
     <div>
-        <div id="aboutMe">
+        <div id="aboutMe" data-aos="fade-right" data-aos-duration="500" data-aos-delay="700">
             <h3>Über mich</h3>
             <p>Dieses Projekt wurde von mir im Rahmen eines Sommersemester-Projekts ins Leben gerufen. Innerhalb weniger Monate habe ich mit Leidenschaft und Hingabe an der Entwicklung gearbeitet, um eine kreative und praktische Lösung zu schaffen. Als Einzelperson strebe ich danach, Ideen schnell umzusetzen und Innovationen zu realisieren, die sowohl funktional als auch einzigartig sind.</p>
         </div>
@@ -53,7 +55,7 @@
         </div>        
     </div>
     <div>
-        <div id="project">
+        <div id="project" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
             <h1>Projekt</h1>
             <p>In diesem Projekt dreht sich alles um drei legendäre Autos: den Porsche GT3 RS, den Audi R8 und den VW Käfer. Jedes dieser Fahrzeuge repräsentiert eine einzigartige Ära und eine eigene Philosophie des Automobilbaus. Vom modernen, leistungsstarken Porsche über den futuristischen Audi R8 bis hin zum zeitlosen Klassiker, dem VW Käfer – diese Autos verbinden Historie und Innovation auf faszinierende Weise. Dieses Projekt feiert nicht nur ihre Technik und Ästhetik, sondern lässt die Leidenschaft für außergewöhnliche Fahrzeuge spürbar werden. Tauche ein in die Welt dieser automobilen Meisterwerke!</p>
         </div>
@@ -61,12 +63,11 @@
 
     <h2>Hier kannst du uns finden</h2>
 
-    <div id="map"></div>
+    <div id="map" data-aos="fade-up-right" data-aos-duration="800" data-aos-delay="500"></div>
 
     <div id="footer">
         <div id="sources">
             <p>https://chatgpt.com/</p>
-            <p>https://www.porsche.at/</p>
         </div>
         <div id="phoneNumber">
             <p> Tel: +49 711 911 75550</p>

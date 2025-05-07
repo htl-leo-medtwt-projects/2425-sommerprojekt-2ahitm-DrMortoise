@@ -1,3 +1,5 @@
+AOS.init();
+
 document.addEventListener("DOMContentLoaded", function() {
     let map = L.map('map').setView([48.268333, 14.251389], 13); // Koordinaten der HTL Leonding
 
