@@ -157,12 +157,13 @@ body {
     opacity: 1;
 }
 
-#slideshowHeadline, #shopImage {
+#slideshowHeadline {
     width: 100vw;
+    margin-top: 19vh;
 }
 
-#slideshowHeadline {
-    margin-top: 19vh;
+#shopImage {
+    width: 100vw;
 }
 
 #mainSlide {
@@ -360,7 +361,6 @@ button:hover {
 #porsche911list, #porscheGT3list {
     list-style: none;
     width: 26vw;
-    margin-left: 1vw;
     text-align: center;
 }
 

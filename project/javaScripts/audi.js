@@ -1,3 +1,5 @@
+AOS.init();
+
 (function createCardStack() {
   const cardsHTML = `
       <div id="cards">

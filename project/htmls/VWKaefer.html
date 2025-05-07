@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
     <link rel="stylesheet" href="../stylesheets/vs.css">
     <script src="../javaScripts/vw.js" defer></script>
     <title>VW Käfer</title>
@@ -39,7 +41,7 @@
         <div id="videoHeadline">
             <img id="videoImage" src="../images/VWKäfer/Videos.png" alt="Videos">
         </div>
-        <div id="videos">
+        <div id="videos" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="700">
             <video width="1120" height="630" controls poster="../images/VWKäfer/thumbnail.jpg" src="../videos/video01.mp4"></video>
             <iframe width="1120" height="630" src="https://www.youtube.com/embed/1DGgfRUlVEo?si=oXdfPetU1cDdbt3x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <video width="1120" height="630" controls poster="../images/VWKäfer/thumbnail03.jpg" src="../videos/video03.mp4"></video>
@@ -49,12 +51,12 @@
         <div id="comparison">
             <img id="comparisonHeadline" src="../images/VWKäfer/Vergleich.png" alt="comparison">
             <div id="cards">
-                <div id="cardOne">
+                <div id="cardOne" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
                     <img id="comparisonVWBus" src="../images/VWKäfer/Comparison/VWBus.jpg" alt="VW Bus">
                     <h1>VW Bus</h1>
                     <p>Der VW Bus wurde 1950 eingeführt und basierte auf dem VW Käfer. Er wurde schnell zum Symbol für Freiheit und Abenteuer, besonders in den 60er Jahren bei der Hippie- und Surferbewegung. Der Bus, auch Bulli genannt, war zunächst ein praktischer Transporter, entwickelte sich aber zum Kultfahrzeug. Mit jeder Generation, vom T1 bis zum modernen T7, blieb der Bus beliebt und hat bis heute eine treue Fangemeinde.</p>
                 </div>
-                <div id="cardTwo">
+                <div id="cardTwo" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
                     <img id="comparisonVWKäfer" src="../images/VWKäfer/Comparison/VWKaefer.jpg" alt="VW Käfer">
                     <h1>VW Käfer</h1>
                     <p>Der VW Käfer wurde 1938 von Volkswagen unter dem Namen "Volkswagen" als erschwingliches Auto für die breite Bevölkerung entwickelt. Mit seinem markanten, runden Design und der luftgekühlten Technik wurde er schnell zu einem der meistverkauften Autos der Welt. Besonders in den 1960er und 70er Jahren erlebte der Käfer seinen Höhepunkt und wurde zu einem Symbol für Unabhängigkeit und Kultur. Er blieb über Jahrzehnte hinweg in Produktion und ist bis heute eines der bekanntesten und kultigsten Fahrzeuge.</p>
@@ -66,7 +68,8 @@
         <div id="guessingGame">
             <img id="guessingGameHeadline" src="../images/VWKäfer/Ratespiel.png" alt="guessing Game Headline">
         </div>
-        <div id="guessingBoxes">
+        <div id="question"></div>
+        <div id="guessingBoxes" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
             <div id="box1">Box 1</div>
             <div id="box2">Box 2</div>
             <div id="box3">Box 3</div>

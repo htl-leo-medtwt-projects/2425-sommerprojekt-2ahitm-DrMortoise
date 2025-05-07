@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
     <link rel="stylesheet" href="../stylesheets/porsche.css">
     <script src="../javaScripts/porsche.js" defer></script>
-        <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <!-- ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <title>Porsche GT3 RS</title>
 </head>
 <body>
@@ -27,11 +25,11 @@
     </div>
     <div id="AboutPorsche">
         <img id="aboutUsPorsche" src="../images/PorscheGT3RS/AboutUsBackground.png" alt="background Image">
-        <div id="boxAboutUs"><p>Porsche ist eine deutsche Automarke, die für sportliche und luxuriöse Fahrzeuge bekannt ist. Gegründet 1931 in Stuttgart, hat sich das Unternehmen mit Modellen wie dem 911 einen legendären Ruf erarbeitet. Neben klassischen Sportwagen bietet Porsche auch SUVs und Elektroautos wie den Taycan an. Die Marke verbindet Tradition mit Innovation und ist zudem erfolgreich im Motorsport.</p></div>
-        <img id="aboutUsPorscheImage" class="scrollCar" src="../images/PorscheGT3RS/AboutUsPorsche.png" alt="Porsche img">
+        <div id="boxAboutUs" data-aos="fade-down" data-aos-duration="2300"><p>Porsche ist eine deutsche Automarke, die für sportliche und luxuriöse Fahrzeuge bekannt ist. Gegründet 1931 in Stuttgart, hat sich das Unternehmen mit Modellen wie dem 911 einen legendären Ruf erarbeitet. Neben klassischen Sportwagen bietet Porsche auch SUVs und Elektroautos wie den Taycan an. Die Marke verbindet Tradition mit Innovation und ist zudem erfolgreich im Motorsport.</p></div>
+        <img id="aboutUsPorscheImage" src="../images/PorscheGT3RS/AboutUsPorsche.png" alt="Porsche img">
     </div>
     <div>
-        <img id="slideshowHeadline" class="headlineSlideshow" src="../images/PorscheGT3RS/Slideshow.png" alt="Slideshow">
+        <img id="slideshowHeadline" src="../images/PorscheGT3RS/Slideshow.png" alt="Slideshow">
         <div id="slideShow">
             <img id="mainSlide" src="../images/PorscheGT3RS/SlideshowImage01.png" alt="SlideshowImage">
             <img id="nextSlide" src="../images/PorscheGT3RS/SlideshowImage02.png" alt="SlideshowImage">
@@ -39,8 +37,8 @@
         </div>
     </div>
     <div>
-        <img id="shopImage" class="headlineShop" src="../images/PorscheGT3RS/Shop.png" alt="Shop">
-        <div id="outputVote"></div>
+        <img id="shopImage" src="../images/PorscheGT3RS/Shop.png" alt="Shop">
+        <div id="outputVote" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500"></div>
 
         <div id="footerShop">
             <div id="logoNameShop">
@@ -60,10 +58,10 @@
         </div>
     </div>
     <div id="comparisonPage">
-        <img id="comparison" class="comparisonScroll" src="../images/PorscheGT3RS/Vergleich.jpg" alt="comparison">
+        <img id="comparison" src="../images/PorscheGT3RS/Vergleich.jpg" alt="comparison">
         <div id="cards">
-            <div id="cardOne">
-                <img id="comparisonPorsche911" class="porsche911" src="../images/PorscheGT3RS/porsche_911_gt3_vergleich.png" alt="Porsche 911">
+            <div id="cardOne" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2100">
+                <img id="comparisonPorsche911" src="../images/PorscheGT3RS/porsche_911_gt3_vergleich.png" alt="Porsche 911">
                 <p>Porsche 911</p>
                 <ul id="porsche911list">
                     <li>Der Porsche 911 wurde 1964 eingeführt und ist eine der bekanntesten Sportwagen-Ikonen der Welt.</li>
@@ -71,8 +69,8 @@
                     <li>Über die Jahrzehnte hinweg wurde der 911 kontinuierlich weiterentwickelt, bleibt aber seinem klassischen Design treu.</li>
                 </ul>
             </div>
-            <div id="cardTwo">
-                <img id="comparisonPorscheGT3Rs" class="porscheGT3RS" src="../images/PorscheGT3RS/vergleichImage01.png" alt="Porsche GT3 RS">
+            <div id="cardTwo" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2300">
+                <img id="comparisonPorscheGT3Rs" src="../images/PorscheGT3RS/vergleichImage01.png" alt="Porsche GT3 RS">
                 <p>Porsche GT3 RS</p>
                 <ul id="porscheGT3list">
                     <li>Der GT3 RS ist die radikalste straßenzugelassene Version des 911, entwickelt mit Fokus auf Motorsport-Technologie.</li>

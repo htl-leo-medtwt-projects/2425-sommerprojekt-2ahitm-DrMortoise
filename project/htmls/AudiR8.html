@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
     <link rel="stylesheet" href="../stylesheets/audi.css">
     <script src="../javaScripts/audi.js" defer></script>
     <title>Audi R8</title>
@@ -32,7 +34,8 @@
             <div id="headlineImage">
                 <img id="aboutUsImage" src="../images/Audir8/aboutUsHeadline.png" alt="About us">
             </div>
-            <div id="boxAboutUs"><p>Audi R8 – Die Ikone der Performance</p>
+            <div id="boxAboutUs" data-aos="fade-up" data-aos-duration="2300">
+                <p>Audi R8 – Die Ikone der Performance</p>
                 <p>Der Audi R8 steht für kompromisslose Kraft, präzise Ingenieurskunst und pure Emotion. Ein Supersportwagen, der die Straße beherrscht.</p>
                 <p>Mit seinem hochdrehenden V10-Motor liefert er atemberaubende Beschleunigung und ein unverwechselbares Klangbild. Dank quattro-Allradantrieb bleibt die Performance in jeder Situation perfekt kontrollierbar.</p>
                 <p>Sein markantes Design verbindet aggressive Dynamik mit zeitloser Eleganz. Im Innenraum treffen Luxus und Motorsport-Technologie aufeinander – ein Cockpit, das auf den Fahrer zugeschnitten ist.</p>
@@ -46,7 +49,7 @@
             <img src="../images/Audir8/Markenpreise.png" alt="Brand Prices">
         </div>
 
-        <div id="card-container"></div>
+        <div id="card-container" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500"></div>
 
     </div>
     <div>
@@ -54,10 +57,10 @@
             <img src="../images/Audir8/Produktionsstätte_Headline.png" alt="Produktionsstätte">
         </div>
         <div id="facts">
-            <p>fact1: Die Produktion des Audi R8 begann im Jahr 2006 und endete im ersten Quartal 2024. </p>
-            <p>fact2: Der Audi R8 wurde exklusiv von Audi AGs privater Tochtergesellschaft entwickelt und hergestellt, die auf die Produktion von Hochleistungskomponenten spezialisiert ist. </p>
-            <p>fact3: Der Audi R8 verwendet das permanente Allradantriebssystem "quattro" von Audi.</p>
-            <p>fact4: Der Audi R8 basierte stark auf dem Lamborghini Gallardo und wurde im Jahr 2008 mit einem 5,2-Liter-V10-Motor ausgestattet, der auch im Lamborghini Gallardo verwendet wurde.</p>
+            <p data-aos="fade-right" data-aos-duration="1500">fact1: Die Produktion des Audi R8 begann im Jahr 2006 und endete im ersten Quartal 2024. </p>
+            <p data-aos="fade-right" data-aos-duration="1500">fact2: Der Audi R8 wurde exklusiv von Audi AGs privater Tochtergesellschaft entwickelt und hergestellt, die auf die Produktion von Hochleistungskomponenten spezialisiert ist. </p>
+            <p data-aos="fade-right" data-aos-duration="1500">fact3: Der Audi R8 verwendet das permanente Allradantriebssystem "quattro" von Audi.</p>
+            <p data-aos="fade-right" data-aos-duration="1500">fact4: Der Audi R8 basierte stark auf dem Lamborghini Gallardo und wurde im Jahr 2008 mit einem 5,2-Liter-V10-Motor ausgestattet, der auch im Lamborghini Gallardo verwendet wurde.</p>
         </div>
         <img id="produceImage" src="../images/Audir8/Produktionsstätte.png" alt="Produktionsstätten Image">
     </div>
@@ -75,7 +78,7 @@
         </div>
     </div>
     <div>
-        <div id="calculator">
+        <div id="calculator" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
             <h2>Audi R8 Performance-Rechner</h2>
         
         <label id="headlines">Modell wählen:</label>
@@ -111,7 +114,7 @@
 
     <section id="feedback" class="section evaluation-section">
         <img id="evaluationImg" src="../images/Audir8/bewertungen.png" alt="evaluation">
-        <div class="evaluation-container">
+        <div class="evaluation-container" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
             <div id="feedbackDisplay" class="feedback-box"></div>
             <textarea id="feedbackInput" placeholder="Schreiben Sie Ihre Bewertung..."></textarea>
             <button id="submitFeedbackButton">Send</button>
