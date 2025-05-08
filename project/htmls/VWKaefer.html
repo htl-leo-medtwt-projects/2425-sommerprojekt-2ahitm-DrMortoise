@@ -69,12 +69,20 @@
             <img id="guessingGameHeadline" src="../images/VWKäfer/Ratespiel.png" alt="guessing Game Headline">
         </div>
         <div id="question"></div>
-        <div id="guessingBoxes" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700">
-            <div id="box1">Box 1</div>
-            <div id="box2">Box 2</div>
-            <div id="box3">Box 3</div>
-            <div id="box4">Box 4</div>
-        </div>
+
+<div id="guessingBoxes">
+  <div id="box1" class="box"></div>
+  <div id="box2" class="box"></div>
+  <div id="box3" class="box"></div>
+  <div id="box4" class="box"></div>
+</div>
+
+<div id="sliderDiv" style="display: none;">
+  <input type="range" id="slider" />
+  <p id="sliderValue">Ihre Schätzung:</p>
+  <button id="submitSlider">Antwort bestätigen</button>
+  <p id="sliderFeedback"></p>
+</div>
     </div>
     <div id="footer">
         <div id="sources">

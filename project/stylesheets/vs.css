@@ -385,16 +385,16 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  .stretch-animation {
-    animation: stretch 0.5s ease-in-out;
+  .down-animation {
+    animation: down 0.5s ease-in-out;
   }
 
-  @keyframes stretch {
+  @keyframes down {
     from {
-      transform: scale(0.1);
+      transform: translateY(-100%);
     }
     to {
-      transform: scale(1);
+      transform: translateY(0);
     }
   }
 
@@ -408,4 +408,83 @@ body {
     border-radius: 1vw;
     color: white;
     font-size: 3vw;
+  }
+
+  #submitSlider {
+    width: 20vw;
+    height: 8vh;
+    font-size: 2vw;
+    border-radius: 1vw;
+    margin-left: 39.5%;
+    background-color: #fff10a;
+    font-family: BebasNeue;
+    transition: scale 0.2s ease-in-out;
+    border: none;
+    scale: 0.8;
+  }
+
+#slider {
+    -webkit-appearance: none;
+    width: 60vw;
+    height: 1vw;
+    background: #fff200;
+    border-radius: 5px;
+    outline: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+    margin: 4vw 20vw;
+  }
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    font-size: 2vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    width: 20vw;
+    height: 8vh;
+    margin-left: 39.5%;
+    transition: scale 0.3s ease-in-out;
+}
+
+#box1, #box2, #box3, #box4 {
+    margin-bottom: 2vw;
+}
+
+#box1:hover, #box2:hover, #box3:hover, #box4:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+  #submitSlider:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  
+  #slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #slider::-moz-range-thumb {
+    width: 2.4vw;
+    height: 2.4vw;
+    border-radius: 50%;
+    background: #3f42ff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #slider::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4c4eaf;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
