@@ -222,3 +222,64 @@ h3 {
     text-align: center;
     font-size: 1vw;
 }
+
+/*responsive design*/
+
+@media (max-width: 428px) {
+
+#logoName > #blurBox {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -20vh;
+    margin-bottom: 12vh;
+    width: 60vw;
+    font-size: 12vw;
+    padding: 2vh;
+    border-radius: 0.5em;
+    text-align: center;
+  }
+
+  #underlineText {
+    font-size: 2vw;
+    margin-top: 5vh;
+    margin-left: -9vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+    margin-bottom: 1vh;
+  }
+
+  #explination {
+    font-size: 2vw;
+    margin-top: 5vh;
+    width: 80vw;
+    margin-left: 10vw;
+  }
+
+  /*unfärtig*/
+  .circle {
+    width: 5vw;
+    height: 5vw;
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 5vw;
+    margin-top: -25vh;
+  }
+
+  #map {
+    height: 40vw;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 4vh;
+    border-radius: 1vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+    margin-top: 5vh;
+  }
+
+}
