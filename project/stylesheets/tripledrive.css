@@ -282,4 +282,32 @@ h3 {
     margin-top: 5vh;
   }
 
+  #footer {
+    height: 10vh;
+  }
+
+  #sources {
+    height: 5vh;
+  }
+
+  #sources {
+    height: 5vh;
+  }
+
+  #phoneNumber {
+    font-size: 3vw;
+    left: 35vw;
+    margin-top: 0vh;
+  }
+
+  #socials {
+    width: 24.3vw;
+  }
+
+  #logo {
+    width: 20vw;
+    margin-left: 75vw;
+    margin-top: 1vw;
+  }
+
 }

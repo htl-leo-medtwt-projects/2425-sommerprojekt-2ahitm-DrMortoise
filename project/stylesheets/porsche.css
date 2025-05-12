@@ -492,3 +492,120 @@ button:hover {
     margin-left: 75vw;
     margin-top: 2vw;
 }
+
+@media (max-width: 428px) {
+
+    #logoName {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        top: 50vh;
+        left: 52vw;
+        color: rgba(255, 255, 255, 0.77);
+        font-size: 6vw;
+    }
+
+    #headline {
+        font-size: 10vw;
+        margin-top: -8vh;
+        margin-left: -6vw;
+    }
+
+    #underlineText {
+        font-size: 3vw;
+        margin-top: -55vh;
+        letter-spacing: 1px;
+    }
+
+    #navigation {
+        height: 2vh;
+    }
+
+    #navigationButtons {
+        position: relative;
+    }
+
+    #AboutPorsche {
+        height: 13vh;
+        margin-top: -0.4vh;
+        background-image: url();
+    }
+
+    #boxAboutUs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -3vw;
+        margin-top: 4vh;
+        height: 2vh;
+        width: 50vw;
+    }
+
+    #boxAboutUs > p {
+        font-size: 3vw;
+        margin-bottom: -7vh;
+    }
+
+    #aboutUsPorscheImage {
+        margin-top: 19vh;
+        width: 55vw;
+        margin-left: -2vw;
+    }
+
+    #mainSlide {
+        height: 25vh;
+    }
+
+    #nextSlide {
+        margin-top: -20vh;
+        margin-left: 20vw;
+        width: 20vw;
+    }
+
+    #nextNextSlide {
+        margin-top: -12vh;
+        margin-left: 59vw;
+        width: 20vw;
+    }
+
+    #outputVote {
+        height: 50vh;
+        margin-top: -6vh;
+    }
+
+    #outputVote > div {
+        height: 35vh;
+        width: 40vw;
+        font-size: 2vw;
+    }
+
+    #footerShop {
+        height: 6vh;
+    }
+
+    #logoNameShop {
+        display: flex;
+        position: absolute;
+        margin-left: 2vw;
+        margin-top: 0.9vh;
+        font-size: 8vw;
+    }
+
+    #login {
+        margin-top: 0.4vh;
+        margin-left: 65vw;
+        width: 25vw;
+        height: 5vh;
+    }
+
+    #loginImage {
+        width: 12vw;
+    }
+
+    #login > p {
+        font-size: 5vw;
+        letter-spacing: 0.2vw;
+    }
+    
+}
