@@ -382,23 +382,7 @@ body {
     text-align: center;
 }
 
-#model > option {
-    font-size: 1vw;
-    text-align: center;
-    background-color: black;
-    color: white;
-    border: none;
-}
-
-#weather > option {
-    font-size: 1vw;
-    text-align: center;
-    background-color: black;
-    color: white;
-    border: none;
-}
-
-#tires > option {
+#model > option, #weight > option, #weather > option, #tires > option {
     font-size: 1vw;
     text-align: center;
     background-color: black;
@@ -619,4 +603,222 @@ textarea {
     margin-left: 70vw;
     border-radius: 1vw;
     border: 2vw solid rgba(0, 0, 0, 0.775);
+}
+
+@media (max-width: 428px) {
+
+    #headline {
+        margin-top: -52vh;
+    }
+
+    #backgroundImagesHeader {
+        width: 100vw;
+        margin-left: 0.8vh;
+    }
+
+    #backgroundImagesHeader > img {
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        width: 30vw;
+    }
+
+    #sideText {
+        display: none;
+    }
+
+    #logoName {
+        margin-top: -8vh;
+    }
+
+    #navigation {
+        height: 2vh;
+    }
+
+    #navigationButtons {
+        position: relative;
+    }
+
+    #boxAboutUs {
+        margin-top: 20vh;
+        margin-left: -8vw;
+        padding: 4vw;
+        width: 80vw;
+        font-size: 3.4vw;
+    }
+
+    #AboutUsBackground {
+        height: 80vh;
+    }
+
+    #brandPricesImage > img {
+        margin-top: -10vh;
+    }
+
+    #cards {
+        width: 300vw;
+        height: 40vh;
+        margin-top: -18vh;
+        margin-left: -5vw;
+        margin-right: -25vw;
+    }
+
+    .card > img {
+        height: 12vh;
+        margin-top: -5vh;
+    }
+
+    .card > ul > li {
+        font-size: 4vw;
+        padding: 1vw;
+        margin: 0.5vw;
+        background-color: black;
+        color: white;
+        
+    }
+
+    #produceImage {
+        display: none;
+    }
+
+    #headlineImageProduce > img {
+        margin-top: -13vh;
+    }
+
+    #facts {
+        margin-left: 10vw;
+        text-align: center;
+    }
+
+    #facts > p {
+        width: 80vw;
+        font-size: 5vw;
+    }
+
+    #calculator {
+        margin-top: -15vh;
+        margin-left: 52vw;
+        height: 30vh;
+        width: 45vw;
+    }
+
+    #headlines {
+        font-size: 4vw;
+        margin-top: 0vh;
+    }
+
+    #model {
+        font-size: 2.5vw;
+        margin-left: 8vw;
+    }
+
+    #weight {
+        font-size: 2.5vw;
+        margin-left: 17vw;
+    }
+
+    #weather {
+        font-size: 2.5vw;
+        margin-left: 10vw;
+    }
+
+    #tires {
+        font-size: 2.5vw;
+        margin-left: 11vw;
+    }
+
+    #calculate {
+        font-size: 3vw;
+        margin-left: 14vw;
+        margin-top: 2vh;
+    }
+
+    #model > option, #weight > option, #weather > option, #tires > option {
+        font-size: 4vw;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    #AccelerationValue {
+        width: 40vw;
+        height: 40vw;
+        margin-top: 1vh;
+        margin-left: 5vw;
+    }
+
+    #kmH, #mS {
+        font-size: 5vw;
+        margin-left: 5.1vw;
+        margin-top: 11vw;
+    }
+
+    h2 {
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    #evaluationImg {
+        margin-top: 3vh;
+    }
+
+    #feedbackDisplay {
+        height: 20vh;
+        width: 80vw;
+        margin-top: 15vh;
+        margin-left: 16vh;
+    }
+
+    .feedback-message > p {
+        font-size: 3.5vw;
+    }
+
+    #feedbackInput {
+        margin-top: 18vh;
+        font-size: 4vw;
+        width: 70vw;
+        height: 8vw;
+        margin-left: 4.7vw;
+    }
+
+    #feedback {
+        height: 120vw;
+    }
+
+    #submitFeedbackButton {
+        width: 40vw;
+        padding: 2vw;
+        font-size: 4vw;
+        margin-left: 4.7vw;
+    }
+
+    #footer {
+        height: 10vh;
+    }
+
+    #sources {
+        height: 5vh;
+    }
+
+    #sources {
+        height: 5vh;
+    }
+
+    #phoneNumber {
+        font-size: 3vw;
+        left: 35vw;
+        margin-top: 0vh;
+    }
+
+    #socials {
+        width: 24.3vw;
+        margin-left: 34vw;
+    }
+
+    #logo {
+        width: 20vw;
+        margin-left: 75vw;
+        margin-top: 1vw;
+    }
 }
