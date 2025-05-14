@@ -74,8 +74,7 @@ body {
 
 #explination, #list > p:last-of-type {
     color: white;
-    text-align: center;
-    font-size: 2vw;
+    text-align: center;    
     margin-top: 12vh;
     width: 80vw;
     margin-left: 10vw;
@@ -246,32 +245,63 @@ h3 {
   }
 
   h3 {
-    font-size: 5vw;
+    font-size: 12vw;
+    width: 50vw;
     margin-bottom: 1vh;
   }
 
+  #logoImage {
+    margin-top: -38vh;
+  }
+
   #explination {
-    font-size: 2vw;
+    font-size: 4vw;
     margin-top: 5vh;
     width: 80vw;
     margin-left: 10vw;
   }
 
+  #aboutMe > p {
+    font-size: 4vw;
+    margin-top: 2vh;
+    width: 80vw;
+    margin-left: 0vw;
+  }
 
-
-
-
-  /*unfärtig*/
   .circle {
     width: 7vw;
     height: 7vw;
     font-size: 5vw;
   }
 
+  .car-name {
+    opacity: 1;
+    font-size: 5vw;
+  }
+
+  #box3 {
+    margin-bottom: -9vh;
+  }
+
+  #underLineListText {
+    font-size: 5vw;
+  }
 
   h1 {
     font-size: 5vw;
     margin-top: -25vh;
+  }
+
+  #project {
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+  }
+
+  #project > p {
+    font-size: 4vw;
+    margin-top: 5vh;
+    width: 80vw;
+    margin-left: 10vw;
   }
 
   #map {
@@ -292,21 +322,31 @@ h3 {
   }
 
   #sources {
-    height: 5vh;
+    height: 7vh;
+    width: 31vw;
   }
 
-  #sources {
-    height: 5vh;
+  #sources > p {
+    font-size: 3vw;
+    padding: 0;
+    margin: 1vw;
   }
 
   #phoneNumber {
-    font-size: 3vw;
-    left: 35vw;
-    margin-top: 0vh;
+    font-size: 4vw;
+    left: 39vw;
+    margin-top: -1vh;
   }
 
   #socials {
-    width: 24.3vw;
+    width: 32.3vw;
+    margin-left: 38vw;
+  }
+
+  #socials > a > img {
+    width: 6vw;
+    margin: 1vw 0.7vw;
+    border-radius: 5vw;
   }
 
   #logo {

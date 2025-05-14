@@ -157,6 +157,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 100vw;
     height: 40vh;
+    margin-left: 3vw;
 }
 
 #videos > video, #videos > iframe {
@@ -553,6 +554,7 @@ body {
     #cards {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
+        height: 90vh;
     }
 
     #cardOne, #cardTwo {
@@ -561,14 +563,126 @@ body {
         margin-left: 5vw;
     }
 
-    #cards > div > img {
-        height: 25vh;
+    #cardTwo {
+        margin-top: 2vw;
+    }
+
+    #cards > div {
+        height: 45vh;
         width: 90vw;
+        margin-left: 5vw;
+    }
+
+    #cards > div > img {
+        height: 45vh;
+        width: 90vw;
+        border-radius: 2vw;
+    }
+
+    #cards > div > h1 {
+        position: relative;
+        z-index: 12;
+        width: 75vw;
+        margin-left: 7vw;
+        font-size: 6vw;
+    }
+
+    #cards > div > p {
+        position: relative;
+        letter-spacing: 2px;
+        z-index: 12;
+        width: 75vw;
+        margin-left: 7vw;
+        padding: 2vw;
+        font-size: 4vw;
     }
 
     #comparisonVWBus {
         background-image: url(../images/PorscheGT3RS/SlideshowImage01.png);
         z-index: 10;
+    }
+
+    #guessingGame {
+        margin-top: 50vh;
+    }
+
+    #question {
+        font-size: 5vw;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    #submitSlider {
+        font-size: 5vw;
+        width: 40vw;
+        margin-left: 30vw;
+    }
+
+    #sliderValue {
+        margin-left: 30vw;
+        font-size: 6vw;
+        color: white;
+    }
+
+    #slider::-moz-range-thumb {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        background: #3f42ff;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #guessingBoxes {
+        gap: 1vw;
+        height: 40vh;
+    }
+
+    #guessingBoxes > div {
+        margin-left: 22vw;
+        width: 40vw;
+        font-size: 5vw;
+        background: tomato;
+        border: 1px solid black;
+    }
+
+    #footer {
+        height: 10vh;
+    }
+
+    #sources {
+        height: 7vh;
+        width: 31vw;
+    }
+
+    #sources > p {
+        font-size: 3vw;
+        padding: 0;
+        margin: 1vw;
+    }
+
+    #phoneNumber {
+        font-size: 4vw;
+        left: 39vw;
+        margin-top: -1vh;
+    }
+
+    #socials {
+        width: 32.3vw;
+        margin-left: 38vw;
+    }
+
+    #socials > a > img {
+        width: 6vw;
+        margin: 1vw 0.7vw;
+        border-radius: 5vw;
+    }
+
+    #logo {
+        width: 30vw;
+        margin-left: 70vw;
+        margin-top: 1vw;
     }
 
 }

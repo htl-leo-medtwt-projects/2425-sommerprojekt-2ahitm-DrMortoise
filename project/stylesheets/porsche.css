@@ -676,27 +676,37 @@ button:hover {
     }
 
     #sources {
-        height: 5vh;
+        height: 7vh;
+        width: 31vw;
     }
 
-    #sources {
-        height: 5vh;
+    #sources > p {
+        font-size: 3vw;
+        padding: 0;
+        margin: 1vw;
     }
 
     #phoneNumber {
-        font-size: 3vw;
-        left: 35vw;
-        margin-top: 0vh;
+        font-size: 4vw;
+        left: 37vw;
+        margin-top: -1vh;
     }
 
     #socials {
-        width: 24.3vw;
+        width: 32.3vw;
+        margin-left: 38vw;
+    }
+
+    #socials > a > img {
+        width: 6vw;
+        margin: 1vw 0.7vw;
+        border-radius: 5vw;
     }
 
     #logo {
-        width: 20vw;
-        margin-left: 75vw;
-        margin-top: 1vw;
+        width: 30vw;
+        margin-left: 70vw;
+        margin-top: 3vw;
     }
     
 }
