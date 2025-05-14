@@ -526,6 +526,14 @@ button:hover {
         position: relative;
     }
 
+    #navigation > #navigationButtons > a {
+        font-size: 5vw;
+    }
+
+    #logoNavigation {
+        width: 9vw;
+    }
+
     #AboutPorsche {
         height: 13vh;
         margin-top: -0.4vh;

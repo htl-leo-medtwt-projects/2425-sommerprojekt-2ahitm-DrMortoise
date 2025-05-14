@@ -488,3 +488,87 @@ body {
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
+
+@media (max-width: 428px) {
+    
+    
+    #navigation {
+        height: 2vh;
+    }
+
+    #navigationButtons {
+        position: relative;
+    }
+
+    #navigation > #navigationButtons > a {
+        font-size: 5vw;
+    }
+
+    #logoNavigation {
+        width: 9vw;
+    }
+
+    #slideshow {
+        height: 45vh;
+    }
+
+    #bigImage {
+        height: 70vw;
+    }
+
+    .preview-images {
+        position: relative;
+        margin-top: 48.4vh;
+        margin-left: 10vw;
+    }
+
+    .preview-images > img {
+        width: 15vw;
+        height: 10vw;
+    }
+
+    #prevButton, #nextButton {
+        margin-top: 40vh;
+        font-size: 5vw;
+    }
+
+    #videos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100vw;
+        height: 40vh;
+    }
+
+    #videos > video, #videos > iframe {
+        margin: 2vw;
+        border-radius: 1vw;
+        height: 35vh;
+        width: 90vw;
+    }
+
+    #comparisonHeadline {
+        margin-top: 74vh;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #cardOne, #cardTwo {
+        position: relative;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    #cards > div > img {
+        height: 25vh;
+        width: 90vw;
+    }
+
+    #comparisonVWBus {
+        background-image: url(../images/PorscheGT3RS/SlideshowImage01.png);
+        z-index: 10;
+    }
+
+}

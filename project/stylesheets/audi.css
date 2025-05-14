@@ -639,6 +639,14 @@ textarea {
         position: relative;
     }
 
+    #navigation > #navigationButtons > a {
+        font-size: 5vw;
+    }
+
+    #logoNavigation {
+        width: 9vw;
+    }
+
     #boxAboutUs {
         margin-top: 20vh;
         margin-left: -8vw;
