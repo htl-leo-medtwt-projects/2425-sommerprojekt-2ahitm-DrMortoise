@@ -243,9 +243,10 @@ h3 {
   }
 
   #underlineText {
-    font-size: 2vw;
-    margin-top: 5vh;
-    margin-left: -9vw;
+    width: 90vw;
+    font-size: 4vw;
+    margin-top: 2.6vh;
+    margin-left: -14vw;
   }
 
   h3 {

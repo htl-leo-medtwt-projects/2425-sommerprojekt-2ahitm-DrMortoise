@@ -610,9 +610,6 @@ button:hover {
         z-index: 10;
     }
 
-
-
-
     #outputVote {
         height: 50vh;
         margin-top: -2vh;
@@ -677,6 +674,12 @@ button:hover {
         border-radius: 1vw;
     }
 
+    #loginBackground {
+        overflow: hidden;
+        height: 120vh;
+        position: fixed;
+    }
+
     #loginField {
         height: 45vh;
     }
@@ -732,16 +735,44 @@ button:hover {
         width: 30vw;
     }
 
-    #porscheGT3list {
-        margin-left: -4vw;
-        width: 30vw;
-    }
-
     #porsche911list > li {
         font-size: 4vw;
     }
 
+    #comparisonPorscheGT3Rs {
+        display: none;
+    }
+
+    #cardTwo {
+        margin-top: 70vh;
+        margin-left: 5vw;
+    }
+
+    #cardTwo > p {
+        display: none;
+    }
+
+    #porscheGT3RSHandy {
+        width: 90vw;
+        border-radius: 3em;
+    }
+
+    #porscheGT3list {
+        margin-top: -32vh;
+        margin-left: -2vw;
+        width: 35vw;
+        position: relative;
+    }
+
+    #porscheGT3list > li {
+        width: 80vw;
+        margin-left: -3vw;
+        font-size: 4vw;
+    }
+
+
     #footer {
+        margin-top: 65vh;
         height: 10vh;
     }
 
