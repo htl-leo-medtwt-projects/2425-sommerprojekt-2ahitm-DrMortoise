@@ -80,6 +80,10 @@ body {
     margin-left: 10vw;
 }
 
+#explination, #underLineListText {
+    font-size: 2vw;
+}
+
 #list {
     height: 80vh;
     position: relative;

@@ -81,7 +81,8 @@ function getRandomItems(arr, num) {
     return shuffled.slice(0, num);
 }
 
-const randomItems = getRandomItems(items, 4);
+const isMobile = window.innerWidth <= 428;
+const randomItems = getRandomItems(items, isMobile ? 2 : 4);
 
 let voteCount = 0;
 
@@ -149,8 +150,3 @@ function loginSend() {
     enableScroll();
     document.getElementById("loginBackground").style.display = "none";
 }
-
-
-
-//Scroll Trigger versuche
-

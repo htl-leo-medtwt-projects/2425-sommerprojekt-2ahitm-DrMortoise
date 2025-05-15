@@ -76,7 +76,7 @@ body {
     justify-content: center;
     text-align: center;
     top: 15vh;
-    left: 30.3vw;
+    left: 28vw;
     color: rgba(255, 255, 255, 0.77);
     font-size: 8vw;
 }  
@@ -98,7 +98,7 @@ body {
     justify-content: center;
     text-align: center;
     top: 80vh;
-    left: 41vw;
+    left: 39vw;
     color: rgba(255, 255, 255, 0.77);
     font-size: 5vw;
 }
@@ -358,6 +358,10 @@ button:hover {
     margin-left: 2vw;
 }
 
+#porsche911Handy {
+    display: none;
+}
+
 #porsche911list, #porscheGT3list {
     list-style: none;
     width: 26vw;
@@ -577,15 +581,65 @@ button:hover {
         width: 20vw;
     }
 
+    #comparisonPorsche911 {
+        display: none;
+    }
+
+    #cards > div {
+        background-color: black;
+    }
+
+    #porsche911Handy {
+        position: absolute;
+        display: block;
+        width: 90vw;
+        border-radius: 3em;
+    }
+
+    #porsche911list {
+        position: relative;
+    }
+
+    #porsche911list > li {
+        width: 80vw;
+        margin-left: -3vw;
+    }
+
+    #porscheGT3list > p {
+        position: absolute;
+        z-index: 10;
+    }
+
+
+
+
     #outputVote {
         height: 50vh;
-        margin-top: -6vh;
+        margin-top: -2vh;
+    }
+
+    #voteImages {
+        width: 20vw;
+        margin-left: -2vw;
     }
 
     #outputVote > div {
-        height: 35vh;
+        height: 42vh;
         width: 40vw;
-        font-size: 2vw;
+        font-size: 3.2vw;
+    }
+
+    .voteButton {
+        position: relative;
+        background-color: #ef0a0a;
+        width: 20vw;
+        border: none;
+        font-family: BebasNeue;
+        letter-spacing: 2px;
+        font-size: 4.3vw;
+        padding: 0.5vw;
+        border-radius: 1vw;
+        transition: 0.5s transform;
     }
 
     #footerShop {
@@ -623,6 +677,31 @@ button:hover {
         border-radius: 1vw;
     }
 
+    #loginField {
+        height: 45vh;
+    }
+
+    #loginField > h1 {
+        font-size: 12vw;
+    }
+
+    #username, #password {
+        display: block;
+        margin-left: 4.2vw;
+        font-size: 5vw;
+    }
+
+    #password {
+        margin-top: 4vh;
+    }
+
+    #send {
+        margin-top: 4vh;
+        margin-left: -25vw;
+        font-size: 5vw;
+        width: 50vw;
+    }
+
     #comparisonPage {
         height: 84vh;
     }
@@ -658,17 +737,8 @@ button:hover {
         width: 30vw;
     }
 
-    #porscheGT3list > li {
-        font-size: 3.3vw;
-    }
-
-    #porsche911list {
-        margin-left: -4vw;
-        width: 30vw;
-    }
-
     #porsche911list > li {
-        font-size: 3.3vw;
+        font-size: 4vw;
     }
 
     #footer {

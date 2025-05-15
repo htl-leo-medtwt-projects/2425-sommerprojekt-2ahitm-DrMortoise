@@ -478,7 +478,6 @@ footer.site-footer {
 #feedbackDisplay {
     width: 80vw;
     height: 60vh;
-    margin-left: -6vw;
     margin-top: 32vh;
     margin-bottom: -28vh;
     transform: translate(-30vw, -50%);
@@ -837,5 +836,20 @@ textarea {
         width: 20vw;
         margin-left: 75vw;
         margin-top: 1vw;
+    }
+}
+
+@media (min-width: 3840px) {
+    #feedbackDisplay {
+        width: 80vw;
+        height: 60vh;
+        margin-left: -6vw;
+        margin-top: 32vh;
+        margin-bottom: -28vh;
+        transform: translate(-30vw, -50%);
+        background: linear-gradient(to bottom, #cc66ff 0%, #9966ff 100%);
+        border: 1px solid #000000;
+        border-radius: 3vw;
+        color: white;
     }
 }
