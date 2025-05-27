@@ -444,6 +444,10 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#porscheGT3RSHandy {
+    display: none;
+}
+
 /*Footer*/
 #footer {
     background-color: #565656;
@@ -479,7 +483,7 @@ button:hover {
     position: absolute;
     margin-left: 39vw;
     margin-top: 8vw;
-    width: 23vw;
+    width: 23.1vw;
     background-color: #D9D9D9;
     border-radius: 1vw;
 }
@@ -594,6 +598,10 @@ button:hover {
         display: block;
         width: 90vw;
         border-radius: 3em;
+    }
+
+    #porscheGT3RSHandy {
+        display: block;
     }
 
     #porsche911list {
