@@ -490,6 +490,13 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
 
+  #sliderValue {
+    color: white;
+    text-align: center;
+    width: 100vw;
+    font-size: 3vw;
+  }
+
 @media (max-width: 428px) {
     
     
@@ -619,7 +626,7 @@ body {
     }
 
     #sliderValue {
-        margin-left: 30vw;
+        margin-left: 1vw;
         font-size: 6vw;
         color: white;
     }
