@@ -158,7 +158,7 @@ body {
 /* Kartenstapel */
 #card-container {
     width: 30vw;
-    height: 60vh;
+    height: 80vh;
     position: relative;
     margin: auto;
     display: flex;
@@ -170,22 +170,29 @@ body {
     cursor: pointer;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 66vh;
 }
 
 .card {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #cc00ff 0%, #ff99ff 100%);
+    background: linear-gradient(
+        to top,
+        rgba(202, 42, 87, 0.476) 0%,
+        rgba(251, 82, 251, 0.54) 100%
+    );
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.13);
     transform-style: preserve-3d;
     transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    opacity: 0.94;
 }
 
 /* Stapel-Effekt */

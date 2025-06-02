@@ -1,56 +1,79 @@
 AOS.init();
 
 (function createCardStack() {
+  // Hilfsfunktion: Modell anhand des Preises bestimmen
+  function getModelType(price) {
+    if (price >= 300000) return "Audi R8 V10 Performance";
+    if (price >= 270000) return "Audi R8 V10 Plus";
+    return "Audi R8 V10";
+  }
+
+  // Karten-Daten mit Preisangaben
+  const cardsData = [
+    {
+      img: "../images/Audir8/Kartenstapel_imgs/img01.png",
+      prices: {
+        de: 224445,
+        us: "$224,995",
+        jp: "¥25,800,000",
+        uk: "£189,990"
+      }
+    },
+    {
+      img: "../images/Audir8/Kartenstapel_imgs/img02.png",
+      prices: {
+        de: 277632,
+        us: "$277,995",
+        jp: "¥31,000,000",
+        uk: "£231,500"
+      }
+    },
+    {
+      img: "../images/Audir8/Kartenstapel_imgs/img03.png",
+      prices: {
+        de: 303346,
+        us: "$303,990",
+        jp: "¥33,500,000",
+        uk: "£249,000"
+      }
+    },
+    {
+      img: "../images/Audir8/Kartenstapel_imgs/img04.png",
+      prices: {
+        de: 224445,
+        us: "$224,995",
+        jp: "¥25,800,000",
+        uk: "£189,990"
+      }
+    },
+    {
+      img: "../images/Audir8/Kartenstapel_imgs/img05.png",
+      prices: {
+        de: 277632,
+        us: "$277,995",
+        jp: "¥31,000,000",
+        uk: "£231,500"
+      }
+    }
+  ];
+
+  // Karten-HTML dynamisch aufbauen, Modelltyp je Karte bestimmen
   const cardsHTML = `
       <div id="cards">
-          <div class="card active">
-              <img src="../images/Audir8/Kartenstapel_imgs/img01.png" alt="Bild 1">
-              <ul>
-                  <li>Deutschland: 224.445€</li>
-                  <li>USA: $224,995</li>
-                  <li>Japan: ¥25,800,000</li>
-                  <li>Großbritannien: £189,990</li>
-              </ul>
-          </div>
-          <div class="card">
-              <img src="../images/Audir8/Kartenstapel_imgs/img02.png" alt="Bild 2">
-              <ul>
-                  <li>Deutschland: 277.632€</li>
-                  <li>USA: $277,995</li>
-                  <li>Japan: ¥31,000,000</li>
-                  <li>Großbritannien: £231,500</li>
-              </ul>
-          </div>
-          <div class="card">
-              <img src="../images/Audir8/Kartenstapel_imgs/img03.png" alt="Bild 3">
-              <ul>
-                  <li>Deutschland: 303.346€</li>
-                  <li>USA: $303,990</li>
-                  <li>Japan: ¥33,500,000</li>
-                  <li>Großbritannien: £249,000</li>
-              </ul>
-          </div>
-          <div class="card">
-              <img src="../images/Audir8/Kartenstapel_imgs/img04.png" alt="Bild 4">
-              <ul>
-                  <li>Deutschland: 224.445€</li>
-                  <li>USA: $224,995</li>
-                  <li>Japan: ¥25,800,000</li>
-                  <li>Großbritannien: £189,990</li>
-              </ul>
-          </div>
-          <div class="card">
-              <img src="../images/Audir8/Kartenstapel_imgs/img05.png" alt="Bild 5">
-              <ul>
-                  <li>Deutschland: 277.632€</li>
-                  <li>USA: $277,995</li>
-                  <li>Japan: ¥31,000,000</li>
-                  <li>Großbritannien: £231,500</li>
-              </ul>
-          </div>
+          ${cardsData.map((card, i) => `
+              <div class="card${i === 0 ? " active" : ""}">
+                  <h1>${getModelType(card.prices.de)}</h1>
+                  <img src="${card.img}" alt="Bild ${i + 1}">
+                  <ul>
+                      <li>Deutschland: ${card.prices.de.toLocaleString("de-DE")}€</li>
+                      <li>USA: ${card.prices.us}</li>
+                      <li>Japan: ${card.prices.jp}</li>
+                      <li>Großbritannien: ${card.prices.uk}</li>
+                  </ul>
+              </div>
+          `).join('')}
       </div>
   `;
-  
 
   const targetElement = document.getElementById('card-container');
   if (targetElement) targetElement.innerHTML = cardsHTML;
