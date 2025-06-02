@@ -57,7 +57,7 @@ AOS.init();
     }
   ];
 
-  // Karten-HTML dynamisch aufbauen, Modelltyp je Karte bestimmen
+//ChatGPT unterstüzung
   const cardsHTML = `
       <div id="cards">
           ${cardsData.map((card, i) => `
